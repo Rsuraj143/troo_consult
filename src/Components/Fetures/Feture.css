@@ -1,0 +1,142 @@
+.feture_text_container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 0 0px 0;
+}
+.feture_heading_cont{
+    display: flex;
+    justify-content: space-between;
+}
+.feture_heading_para::before{
+    content: "";
+    width: 142px;
+    height: 142px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    transform: translateY(-50%);
+    z-index: -11;
+    background: linear-gradient(90deg, #673AB7 0%, #512DA8 100%);
+    opacity: 0.05;
+}
+.feture_heading_para{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    color: #191825;
+    z-index: 999;
+    padding-left: 40px;
+}
+.feture_heading_right{
+    padding-top: 15px;
+}
+.feture_card_section{
+    background-image: url(../../Images//feture_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.feture_cards {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 35px 0;
+    
+  }
+  .fetureCard{
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 15px 15px 15px
+  }
+  .fetureCard:hover{
+    opacity: 0.9;
+    box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+    border-radius: 5px;
+  }
+  .fetureCard:hover .feture_card_para{
+    color: #ffff;
+    transition: 2s all;
+  } 
+  .fetureCard:hover .feture_card_header{
+    color: #ffff;
+    transition: 2s all;
+  }
+  .fetureCard:hover .feture_card_img{
+    border: 4px solid #512DA8  ;
+  }
+  .feture_card_img{
+   padding: 10px;
+   border: 2px solid #FFFFFF30;
+   border-radius: 50%;
+   background: #673AB7;
+  }
+  h3{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .feture_card_header{
+    padding: 30px 0 0 0;
+  }
+  .feture_card_para{
+    padding: 15px 10px;
+  }
+.layer_outer {
+    background-image: url(https://conbiz.vercel.app/assets/images/feauters/feauters-v3-bg-img1.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-property: all;
+    opacity: 1;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transform: scaleY(0);
+    z-index: -1;
+}
+.layer_outer:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(34,38,49,.8);
+    content: "";
+    border-radius: 7px;
+}
+.fetureCard:hover .layer_outer {
+    transform: scaleY(1);
+}
+
+
+
+
+  /* @media (min-width: 600px) {
+    .feture_cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .feture_cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 1300px) {
+    .feture_cards { grid-template-columns: repeat(4, 1fr); }
+  } */
