@@ -88,6 +88,9 @@
     opacity: 1;
     transition: 0.8s all;
 }
+.servicecard:hover .serviceBlock{
+  opacity: 0;
+}
 .service_buttom_text{
     display: flex;
     justify-content: center;

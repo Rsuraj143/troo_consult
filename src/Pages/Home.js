@@ -4,6 +4,7 @@ import BannerComponent from '../Components/Banner/BannerComponent'
 import Feture from '../Components/Fetures/Feture'
 import HeaderComponent from '../Components/Header/HeaderComponent'
 import Highlight from '../Components/Hightlight/Highlight'
+import PortfolioComponent from '../Components/Portfolio/PortfolioComponent'
 import ServiceComponent from '../Components/ServiceComponent/ServiceComponent'
 import VideoSection from '../Components/VideoSection/VideoSection'
 
@@ -17,6 +18,7 @@ const Home = () => {
         <VideoSection/>
         <ServiceComponent/>
         <Highlight/>
+        <PortfolioComponent/>
     </div>
   )
 }
