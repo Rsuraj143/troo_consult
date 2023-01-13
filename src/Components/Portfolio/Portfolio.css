@@ -26,12 +26,15 @@
 .portfolio_banner_container{
     max-width: 1620px;
     margin: 0 auto;
-    padding: 80px 0 50px 0;
+    padding: 80px 0 280px 0;
     
 }
-.portfolio_carosal_container{
+.portfolio_carosal_container {
     max-width: 1620px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-top: -232px;
 }
 .portfolio_subtext{
     background: linear-gradient(89.43deg, rgba(255, 255, 255, 0.5) 2.11%, rgba(255, 255, 255, 0) 54.42%);
@@ -42,4 +45,95 @@
 }
 .portfolio_text_cont{
     padding: 10px 10px;
+}
+.portfolioImg{
+    width: 100%;
+    z-index: -1;
+    position: relative;
+  }
+  .portfolio_text_cont {
+    z-index: 1;
+    position: absolute;
+    bottom: 50px;
+    width: 70%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 5px;
+    left: 50%;
+    opacity: 0;
+}
+.block_circle {
+    position: absolute;
+    bottom: 77px;
+    right: 25px;
+    color: #ffff;
+    border-radius: 50%;
+    background-color: #673AB7;
+    border: 2px solid #ffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+}
+  .portfolio_heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 30px 0;
+  }
+  .carousel-button-group{
+    position: absolute;
+    display: none;
+  }
+  .btn_groups{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .arrow_btn{
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffff;
+  }
+  .portfolioHeading{
+    color: #ffff;
+  }
+  .arrow_btn:hover{
+    background-color: #ffff;
+    color: black;
+    transition: .8s all;
+    cursor: pointer;
+  }
+  
+  .portfolio_carosel_card:hover .portfolio_text_cont{
+    opacity: 1;
+    z-index: 3;
+    transition: .8s all;
+  }
+  .portfolio_carosel_card::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #512DA880;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.8s all;
+    border-radius: 5px;
+  }
+  .portfolio_carosel_card{
+    position: relative;
+    border-radius: 5px;
+  }
+  .portfolio_carosel_card:hover::after{
+    opacity: 1;
+    transition: 0.8s all;
 }
