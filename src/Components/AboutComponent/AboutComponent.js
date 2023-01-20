@@ -4,7 +4,7 @@ import about_para_icon from "../../Images/about_para_icon.svg";
 
 const AboutComponent = () => {
   return (
-    <div className="troo_aboutsection">
+    <div className="troo_aboutsection" id="about">
       <div className="troo_aboutcontainer">
         <div className="troo_aboutcont_left">
           <img src={aboutImg} alt="aboutImg" className="aboutimg" />

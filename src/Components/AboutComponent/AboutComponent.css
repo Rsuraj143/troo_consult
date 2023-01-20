@@ -3,14 +3,14 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 100px 0 50px 0;
-    column-gap: 50px;
+    padding: 117px 0 50px 0;
+    column-gap: 55px;
 }
 .troo_aboutcont_right, .troo_aboutcont_left {
     width: 100%;
 }
 .aboutimg{
-    width: 100%;
+    width: 97.9%;
 }
 .subheading{
     background: linear-gradient(89.43deg, rgba(103, 58, 183, 0.5) 2.11%, rgba(103, 58, 183, 0) 54.42%);

@@ -85,60 +85,60 @@ const Drawer = (props) => {
   return (
     <ul {...props}>
       <li>
-        <NavLink
+        <a
           className={({ isActive }) => (isActive ? activeLink : normal)}
-          to="/"
+          href="#home"
         >
           Home
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/about"
+        <a
+          href="#about"
           className={({ isActive }) => (isActive ? activeLink : normal)}
         >
           About Us
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/service"
+        <a
+          href="#service"
           className={({ isActive }) => (isActive ? activeLink : normal)}
         >
           Our Services
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/portfolio"
+        <a
+          href="#portfolio"
           className={({ isActive }) => (isActive ? activeLink : normal)}
         >
           Portfolio
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/teams"
+        <a
+          href="#teams"
           className={({ isActive }) => (isActive ? activeLink : normal)}
         >
           Our Team
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/testimonial"
+        <a
+          href="#testimonial"
           className={({ isActive }) => (isActive ? activeLink : normal)}
         >
           Testimonial
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/contact"
+        <a
+          href="#contact"
           className={({ isActive }) => (isActive ? activeLink : normal)}
         >
           Contact Us
-        </NavLink>
+        </a>
       </li>
     </ul>
   );

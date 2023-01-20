@@ -10,7 +10,7 @@ import serviceImg_6 from "../../Images/serviceImg_6.png";
 
 const ServiceComponent = () => {
   return (
-    <div className="troo_service_section">
+    <div className="troo_service_section" id="service">
       <div className="troo_service_container">
         <div className="troo_service_heading_cont">
           <h5 className="subheading service_sub_heading">

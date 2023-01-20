@@ -37,7 +37,7 @@ const PortfolioComponent = () => {
     superLargeDesktop: {
       breakpoint: { max: 2200, min: 1440 },
       items: 4,
-      slidesToSlide: 3,
+      slidesToSlide: 2,
     },
     desktop: {
       breakpoint: { max: 1440, min: 1200 },
@@ -62,7 +62,7 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <div>
+    <div id="portfolio">
       <div className="portfoliobg">
         <div className="portfolio_banner_container">
           <h5 className="portfolio_subtext">Our Case Studies</h5>
@@ -84,6 +84,8 @@ const PortfolioComponent = () => {
           arrows={false}
           responsive={responsive}
           customButtonGroup={<ButtonGroup btn1={btn1} btn2={btn2} />}
+          infinite={true}
+          
         >
           <div className="portfolio_carosel_card">
             <div >

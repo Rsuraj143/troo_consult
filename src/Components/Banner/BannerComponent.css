@@ -8,15 +8,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.troo_banner_container{
+.troo_banner_container_fluid{
     display: flex;
     justify-content: space-between;
 }
-.troo_banner_contant{
-    margin: 0 auto;
-    max-width: 1300px;
-    padding: 200px 0;
+
+.troo_banner_text_container{
+    padding: 162px 0 325px 15%;
+    width:100%;
 }
+
 .Banner_btn_group{
     display: flex;  
     column-gap: 30px; 
@@ -28,16 +29,14 @@
    background-position: right;
     background-repeat: no-repeat;
 }
-.troo_banner_contant_container{
-    width: 55%;
-}
+
 .banner_subtext{
     background: linear-gradient(90deg, #673AB7 1.72%, rgba(103, 58, 183, 0) 96.34%);
     border-radius: 5px;
     width: 266px;
     padding: 10px 10px;
     color:#fff;
-    margin-bottom: 34px;
+    margin-bottom: 31px;
 }
 h1{
     font-family: 'Jost';
@@ -48,7 +47,7 @@ h1{
     color: #FFFFFF;
 }
 .banner_main_heading{
-    margin-bottom: 28px;
+    margin-bottom: 45px;
 }
 p{
     font-family: 'Poppins';
@@ -58,8 +57,10 @@ p{
     line-height: 26px;
 }
 .banner_text{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: #ffff;
+    border-left: 2px solid #fff;
+    padding-left: 28px;
 }
 
 .banner_btn_text{
@@ -77,11 +78,8 @@ p{
 }
 .bannerBtn{
     color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
     font-weight: 700;
-    padding: 15px 10px;
-    text-transform: uppercase;
+    padding: 13px 8px;
     letter-spacing: 1px;
     border-radius: 0;
     border: 2px solid #ffffff;
@@ -121,14 +119,14 @@ p{
 
 /* nortmal btn */
 .normal_btn{
-    color: #fff;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
     background: #0059ff;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    padding: 17px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
     border: none;
     position: relative;
@@ -156,6 +154,16 @@ p{
 .normal_btn:hover:before,
 .normal_btn:hover:after{
     width: 0;
+}
+
+.troo_banner_img{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.bannerImg{
+    width: 85%;
+    height: 85%;
 }
 
 @media only screen and (max-width: 767px){
