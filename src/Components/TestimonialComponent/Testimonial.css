@@ -1,0 +1,121 @@
+.testimonial_container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.testimonial_cards {
+  padding: 45px 50px;
+  background: #ffffff;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+  border-radius: 5px;
+}
+.testimonial_card_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.stars {
+  display: flex;
+  color: #512da8;
+  column-gap: 3px;
+  font-size: 20px;
+}
+.testimonial_para {
+  padding: 25px 0;
+  border-bottom: 2px solid #673ab710;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #191825;
+  margin-bottom: 0rem;
+}
+.testimonial_profile {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  column-gap: 10px;
+}
+.testimonial_profile h4 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0;
+}
+.testimonmial_caurosel {
+  padding: 30px 0 170px 0;
+}
+.testimonmial_caurosel .react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: static;
+}
+.testimonmial_caurosel
+  .react-multi-carousel-list
+  .react-multi-carousel-dot-list {
+  position: absolute;
+  bottom: 95px;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.react-multi-carousel-dot--active button {
+  background: #512da8;
+}
+.react-multi-carousel-dot button {
+  display: inline-block;
+  width: 13.33px;
+  height: 13.33px;
+  border-radius: 50%;
+  opacity: 1;
+  padding: 5px 5px 5px 5px;
+  box-shadow: none;
+  transition: background 0.5s;
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  padding: 0;
+  margin: 0;
+  margin-right: 0px;
+  outline: 0;
+  cursor: pointer;
+}
+.react-multiple-carousel__arrow {
+  position: relative;
+  outline: 0;
+  transition: all 0.5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
+.troo_banner_img {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.bannerImg {
+  width: 85%;
+  height: 85%;
+}
+
+

@@ -13,7 +13,7 @@ const Feture = () => {
         <h4 className="subheading">How We Can Help You</h4>
         <div className="feture_heading_cont">
           <div className="feture_heding_left">
-            <h2>We take care your business future to a next level</h2>
+            <h2 className="section_header">We take care your business future to a next level</h2>
           </div>
           <div className="feture_heading_right">
             <p className="feture_heading_para">

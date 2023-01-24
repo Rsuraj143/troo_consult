@@ -8,7 +8,7 @@ const Highlight = () => {
       <div className="highlight_container">
         <div className="highlight_left">
           <h5 className="subheading">People Why Choose US</h5>
-          <h2>
+          <h2 className="section_header">
             Experience you can trust, Service quality you can easily count on
           </h2>
           <p>

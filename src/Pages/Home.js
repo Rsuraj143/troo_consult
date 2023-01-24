@@ -1,4 +1,4 @@
-import React from 'react'
+
 import AboutComponent from '../Components/AboutComponent/AboutComponent'
 import BannerComponent from '../Components/Banner/BannerComponent'
 import Feture from '../Components/Fetures/Feture'
@@ -7,6 +7,8 @@ import Highlight from '../Components/Hightlight/Highlight'
 import PortfolioComponent from '../Components/Portfolio/PortfolioComponent'
 import ServiceComponent from '../Components/ServiceComponent/ServiceComponent'
 import VideoSection from '../Components/VideoSection/VideoSection'
+import TeamComponent from '../Components/Team/TeamComponent'
+import ContactComponent from '../Components/ContactComponent/ContactComponent'
 
 const Home = () => {
   return (
@@ -19,6 +21,9 @@ const Home = () => {
         <ServiceComponent/>
         <Highlight/>
         <PortfolioComponent/>
+        <TeamComponent/>
+        <ContactComponent/>
+        
     </div>
   )
 }

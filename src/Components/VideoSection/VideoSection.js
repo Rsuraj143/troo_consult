@@ -9,7 +9,7 @@ const VideoSection = () => {
     <div className="troo_video_section">
       <div className="troo_video_container">
         <div className="video_container_left">
-          <h2 className="videoHeader">
+          <h2 className="videoHeader section_header">
             Let’s see exclusive video presentation about recent project
           </h2>
           <p className="viderPara">

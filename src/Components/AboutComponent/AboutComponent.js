@@ -10,8 +10,8 @@ const AboutComponent = () => {
           <img src={aboutImg} alt="aboutImg" className="aboutimg" />
         </div>
         <div className="troo_aboutcont_right">
-          <h4 className="subheading"> Get to Know Us</h4>
-          <h2 className="about_header">
+          <h5 className="subheading"> Get to Know Us</h5>
+          <h2 className="section_header">
             We are committed to providing our customers with exceptional.
           </h2>
           <p className="about_para">
@@ -54,7 +54,7 @@ const AboutComponent = () => {
             </div>
           </div>
           <button className="normal_btn">
-            <p className="banner_btn_text">Get Started +</p>
+            <p className="banner_btn_text">Learn More +</p>
           </button>
         </div>
       </div>

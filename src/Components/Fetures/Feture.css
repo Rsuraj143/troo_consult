@@ -31,6 +31,7 @@
     color: #191825;
     z-index: 999;
     padding-left: 40px;
+    margin-bottom: 0rem;
 }
 .feture_heading_right{
     padding-top: 15px;
@@ -90,10 +91,22 @@
   }
   .feture_card_header{
     padding: 30px 0 0 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
   }
-  .feture_card_para{
+  .feture_card_para {
     padding: 15px 10px;
-  }
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
 .layer_outer {
     background-image: url(https://conbiz.vercel.app/assets/images/feauters/feauters-v3-bg-img1.jpg);
     position: absolute;

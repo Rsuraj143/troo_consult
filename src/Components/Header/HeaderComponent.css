@@ -4,6 +4,12 @@
     top: 0;
     z-index: 10;
 }
+.show_nav{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
 .troo_header{
     max-width: 1575px;
     margin: 0 auto;
@@ -19,6 +25,16 @@
 .troo_address {
     display: flex;
     column-gap: 33px;
+}
+.address_default h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #292929;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .logoImg{
     width: 100%;
@@ -36,8 +52,14 @@
     display: flex;
     align-items: center;
     border-left: 1px solid #673AB7;
-    border-right: 1px solid #673AB7 ;
+    border-right: 1px solid #673AB7;
     padding: 0 23px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191825;
 }
 .troo_address_header_bold{
     font-family: 'Poppins';
@@ -59,13 +81,20 @@ h4{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     color: #191825;
 }
-.troo_icon_text{
+.troo_icon_text {
     align-items: center;
     display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #191825;
+    margin-bottom: 0rem;
 }
 .troo_nav_bar{
     display: flex;
@@ -79,6 +108,11 @@ h4{
     justify-content: space-between;
     border-top: 1px solid #673AB7;
     background: #ffff;
+}
+.navmanu_contain ul{
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding-left: 0rem;
 }
 ul{
     list-style: none;
@@ -99,12 +133,14 @@ ul{
 }
 .webLogo{
     background: linear-gradient(90deg, #673AB7 0%, #512DA8 100%);
-    padding: 19px 22px;
+    padding: 21px 22px;
 }
 
+.numbertext p{
+    margin-bottom: 0;
+}
 
-
-.btn_text{
+.btn_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -112,6 +148,7 @@ ul{
     line-height: 23px;
     color: #191825;
     padding: 14px 18px;
+    margin-bottom: 0;
 }
 .button:hover .btn_text{
     color: #ffff;

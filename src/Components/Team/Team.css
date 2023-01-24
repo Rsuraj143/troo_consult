@@ -1,0 +1,225 @@
+.team_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+}
+.team_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.team_carousel_container {
+  padding: 50px 0;
+}
+.team_carosel_card {
+  position: relative;
+  border-radius: 5px;
+}
+.team_img_bg {
+  position: relative;
+}
+.team_img_bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #512da880;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.8s all;
+  border-radius: 5px;
+}
+.teamImg {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.team_icon_cont {
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  width: 50%;
+  padding: 20px 15px;
+  display: flex;
+  column-gap: 7.28px;
+  justify-content: center;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 5px;
+  left: 50%;
+  opacity: 0;
+}
+.team_carosel_card:hover .team_icon_cont {
+  opacity: 1;
+  z-index: 3;
+  transition: 0.8s all;
+}
+.team_carosel_card:hover .team_img_bg::after {
+  opacity: 1;
+  transition: 0.8s all;
+}
+.team_text_container {
+  background: #ffffff;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+  border-radius: 5px;
+  padding: 25px 60px;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.team_name {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #191825;
+}
+.team_carosel_card:hover .team_name {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.team_carousel_container .react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.team_consultation_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-image: url(../../Images//consultation_Bg_img.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.team_consultation_container::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #191825;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+.consultant_inner_container {
+  position: relative;
+  z-index: 99;
+}
+.consultant_inner_container::before {
+  content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-image: url(../../Images//consultation_bg.png);
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 84%;
+    background-position: center;
+    z-index: 1;
+    transform: translate3d(30px, 30px, 0px);
+}
+.consultant_inner_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
+  opacity: 0.8;
+  border-radius: 5px;
+  width: 95%;
+  height: 84%;
+  transform: translate3d(30px, 30px, 0px);
+}
+.consultation_text_cont {
+  padding: 129px 100px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+.consult_right {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  z-index: 99;
+  column-gap: 93px;
+}
+.consult_left {
+  width: 50%;
+  z-index: 99;
+}
+.consult_left h2{
+  color: #FFFFFF;
+}
+.j_animate{
+  width: 30%;
+}
+.consult_btn{
+  display: flex;
+  align-items: center;
+}
+
+.consultant_btn {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color:black;
+  background: #0059ff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+.consultant_btn:hover {
+  color: #000;
+}
+.consultant_btn:before,
+.consultant_btn:after {
+  content: "";
+  background: #ffffff;
+  height: 100%;
+  width: 55%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+.consultant_btn:after {
+  left: auto;
+  right: 0;
+}
+.consultant_btn:hover:before,
+.consultant_btn:hover:after {
+  width: 0;
+}
+.consultant_btn_text {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #191825;
+  margin-bottom: 0;
+}
