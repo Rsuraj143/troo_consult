@@ -4,7 +4,7 @@ import bannerImg from "../../Images/bannerImg.png";
 
 const BannerComponent = () => {
   return (
-    <div className="troo_banner_section">
+    <div className="troo_banner_section" id="home">
       <div className="troo_banner_container_fluid ">
         <div className="troo_banner_text_container">
           <h5 className="banner_subtext">Trusted Business Consultants</h5>

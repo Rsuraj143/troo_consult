@@ -5,39 +5,61 @@ import Facebook from "../../Images/FB.svg";
 import Instagram from "../../Images/Insta.svg";
 import Linkdhin from "../../Images/Link.svg";
 import Twitter from "../../Images/Twitter.svg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 import WebLogo from "../../Images/Logo.svg";
 import phonIcon from "../../Images/Phone.svg";
 import { useEffect, useRef, useState } from "react";
 
 const HeaderComponent = () => {
   const [show, setShow] = useState(false);
-
   const prevScrollY = useRef(0);
-
   const [goingUp, setGoingUp] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      console.log(currentScrollY, prevScrollY.current);
       if (prevScrollY.current < currentScrollY && goingUp) {
-        setGoingUp(false);
+        setGoingUp(true);
+        console.log(false, currentScrollY);
+        console.log("------------5000000000000000----------------");
+        // if (currentScrollY >= 100) {
+        //   setShow(false);
+        // } else {
+        //   setShow(true);
+        // }
+      }
+      if (currentScrollY && goingUp <= 100) {
+        console.log("-----true------");
+        setShow(false);
       }
       if (prevScrollY.current > currentScrollY && !goingUp) {
         setGoingUp(true);
+        console.log(true, currentScrollY);
+        if (currentScrollY >= 100) {
+          // setShow(false);
+          console.log("------------1000000000000000----------------");
+        }
+      }
+
+      if (window.scrollY <= 100) {
+        setShow(false);
+      } else if (window.scrollY > 99) {
+        setShow(true);
       }
 
       prevScrollY.current = currentScrollY;
-      console.log(goingUp, currentScrollY);
+      // console.log(goingUp, currentScrollY);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    
-    console.log(window.scrollY);
-    if (window.scrollY > 80) {
-          setShow(false);
-        } else {
-          setShow(true);
-        }
+
+    // console.log(window.scrollY);
+    // if (window.scrollY <= 100 && show) {
+    //       setShow(false);
+    //     } else if(window.scrollY > 100 && !show){
+    //       setShow(true);
+    //     }
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [goingUp]);
@@ -49,7 +71,7 @@ export default HeaderComponent;
 
 const ShowNav = () => {
   return (
-      <div className="show_nav">
+    <div className="show_nav">
       <div className="troo_nav_bar">
         <div className="webLogo">
           <Link to="/">
@@ -95,10 +117,10 @@ const HideNav = () => {
             </span>
           </div>
           <div className="troo_address_mail">
-            <span >
+            <span>
               <HiOutlineMailOpen />
             </span>
-            <span className="address_default" >
+            <span className="address_default">
               <h5>example@email.com</h5>
             </span>
           </div>
@@ -125,7 +147,7 @@ const HideNav = () => {
           </Link>
         </div>
         <div className="navmanu_contain">
-          <Drawer className="nav-manu" />
+          <Drawer  />
         </div>
         <div>
           <Link>
@@ -149,65 +171,32 @@ const HideNav = () => {
   );
 };
 const Drawer = (props) => {
-  const activeLink = "text-danger";
-  const normal = "";
+ const [click, setClick] = useState(false)
+ const handleClick = () => setClick(!click)
+ const closeMenu = () => setClick(false)
+
   return (
-    <ul {...props}>
+    <ul {...props} className={click ?"nav-manu active":"nav-manu"}>
       <li>
-        <a
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-          href="#home"
-        >
-          Home
-        </a>
+        <Link to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
       </li>
       <li>
-        <a
-          href="#about"
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-        >
-          About Us
-        </a>
+        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>About Us</Link>
       </li>
       <li>
-        <a
-          href="#service"
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-        >
-          Our Services
-        </a>
+        <Link to="service" spy={true} smooth={true} offset={50} duration={500}>Our Services</Link>
       </li>
       <li>
-        <a
-          href="#portfolio"
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-        >
-          Portfolio
-        </a>
+        <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}>Portfolio</Link>
       </li>
       <li>
-        <a
-          href="#teams"
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-        >
-          Our Team
-        </a>
+        <Link to="teams" spy={true} smooth={true} offset={50} duration={500}>Our Team</Link>
       </li>
       <li>
-        <a
-          href="#testimonial"
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-        >
-          Testimonial
-        </a>
+        <Link to="testimonial" spy={true} smooth={true} offset={50} duration={500}>Testimonial</Link>
       </li>
       <li>
-        <a
-          href="#contact"
-          className={({ isActive }) => (isActive ? activeLink : normal)}
-        >
-          Contact Us
-        </a>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact Us</Link>
       </li>
     </ul>
   );

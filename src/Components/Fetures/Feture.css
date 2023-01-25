@@ -108,7 +108,7 @@
     margin-bottom: 0;
 }
 .layer_outer {
-    background-image: url(https://conbiz.vercel.app/assets/images/feauters/feauters-v3-bg-img1.jpg);
+    background-image: url(../../Images/feture_card_bg.png);
     position: absolute;
     top: 0;
     left: 0;
@@ -133,7 +133,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(34,38,49,.8);
+    background: #512DA8;
+    opacity: 0.9;
     content: "";
     border-radius: 7px;
 }

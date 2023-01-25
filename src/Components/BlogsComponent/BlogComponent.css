@@ -1,0 +1,127 @@
+.blogs_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.blogs_header {
+  margin-bottom: 47px;
+}
+.blogs_cards_container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.blogs_card {
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+.blogs_card:hover {
+  opacity: 0.9;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+  border-radius: 5px;
+}
+.blog_bg {
+  background-image: url(../../Images/blog_card_bg.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: top;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+}
+.blog_bg:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #512DA8;
+  opacity: 0.9;
+  content: "";
+  border-radius: 7px;
+}
+.blogs_card:hover .blog_bg {
+  transform: scaleY(1);
+}
+
+
+.blogs_card_header {
+  display: flex;
+  column-gap: 15px;
+}
+.blogs_card_title {
+  padding: 25px 0;
+}
+.blogs_header h2 {
+  margin-bottom: 0;
+}
+.blogs_card_header p {
+  margin-bottom: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #191825;
+}
+.blogs_card:hover .blogs_card_header p {
+    background-color: #ffffff;
+    color: #191825;
+}
+.blogs_card_title h3 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #191825;
+  margin-bottom: 0;
+}
+.blogs_card:hover .blogs_card_title h3{
+    color: #ffffff;
+}
+.blogs_card_para p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #191825;
+  margin-bottom: 28px;
+}
+.blogs_card:hover .blogs_card_para p{
+    color: #ffffff;
+}
+.continue_reading p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #191825;
+  margin-bottom: 0;
+}
+.blogs_card:hover .continue_reading p{
+    color: #ffffff;
+}
+.continue_reading {
+  text-decoration: none;
+}

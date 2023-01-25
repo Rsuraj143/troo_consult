@@ -37,7 +37,7 @@ const TeamComponent = () => {
     },
   };
   return (
-    <div id="team">
+    <div id="teams">
       <div className="team_container">
         <h5 className="subheading">Meet Our Team</h5>
         <div className="team_heading">

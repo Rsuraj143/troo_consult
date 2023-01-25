@@ -2,14 +2,14 @@ import React from "react";
 import "./ContactComponent.css";
 import { Link } from "react-router-dom";
 import { BiPhone } from "react-icons/bi";
-
+import { FaQuestion } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 
 const ContactComponent = () => {
   return (
-    <div>
+    <div id="contact">
       <div className="contact_section">
-        <div className="contact_container">
+        <div className="contact_container" div >
           <h5 className="subheading">How can we help?</h5>
           <div className="contact_heading">
             <div className="contact_left">
@@ -39,116 +39,165 @@ const ContactComponent = () => {
               </div>
             </div>
           </div>
-          <div className="contact_accordian_container">
-            <div className="accordion_contact_left">
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item className="accordion-item" eventKey="0">
-                  <Accordion.Header>
-                  How to Getting Started your Business?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>
-                  Why do I need a business consulting service?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="2">
-                  <Accordion.Header>What’s the difference a consultant and a coach?</Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3">
-                  <Accordion.Header>
-                  What kind of experience does your business consulting?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="4">
-                  <Accordion.Header>What are the terms of working a business consultant?</Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+          <div className="contact_accordian_section">
+            <div className="contact_accordian_container">
+              <div className="accordion_contact_left">
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item className="accordion-item" eventKey="0">
+                    <Accordion.Header>
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      How to Getting Started your Business?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      Why do I need a business consulting service?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>
+                      {" "}
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      What’s the difference a consultant and a coach?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      What kind of experience does your business consulting?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="4">
+                    <Accordion.Header>
+                      {" "}
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      What are the terms of working a business consultant?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+              <div className="accordion_ncontact_right">
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      How to Getting Started your Business?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      How much does it cost to hire a business consultant?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>
+                      {" "}
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      What industries or businesses do you specialize in?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      How do you price your services?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="4">
+                    <Accordion.Header>
+                      {" "}
+                      <span className="questionmark">
+                        <FaQuestion />
+                      </span>{" "}
+                      Do you offer a free consultation?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
             </div>
-            <div className="accordion_ncontact_right">
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>
-                  How to Getting Started your Business?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>
-                  How much does it cost to hire a business consultant?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="2">
-                  <Accordion.Header>What industries or businesses do you specialize in?</Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3">
-                  <Accordion.Header>
-                  How do you price your services?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="4">
-                  <Accordion.Header>Do you offer a free consultation?</Accordion.Header>
-                  <Accordion.Body>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+            <div className="accordian_btn">
+            <button className="button">
+              <p className="btn_text">+ View All FAQ’s</p>
+            </button>
             </div>
           </div>
         </div>

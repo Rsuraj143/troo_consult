@@ -9,8 +9,12 @@ import ServiceComponent from '../Components/ServiceComponent/ServiceComponent'
 import VideoSection from '../Components/VideoSection/VideoSection'
 import TeamComponent from '../Components/Team/TeamComponent'
 import ContactComponent from '../Components/ContactComponent/ContactComponent'
+import BlogsComponent from '../Components/BlogsComponent/BlogsComponent'
+import FooterComponent from '../Components/FooterComponent/FooterComponent'
+
 
 const Home = () => {
+
   return (
     <div>
         <HeaderComponent/>
@@ -23,6 +27,8 @@ const Home = () => {
         <PortfolioComponent/>
         <TeamComponent/>
         <ContactComponent/>
+        <BlogsComponent/>
+        <FooterComponent/>
         
     </div>
   )
