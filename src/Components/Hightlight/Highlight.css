@@ -20,6 +20,9 @@
   width: 100%;
   z-index: -1;
 }
+.width100{
+  width: 100%;
+}
 .highlight_container {
   max-width: 1300px;
   margin: 0 auto;
@@ -28,10 +31,10 @@
   column-gap: 25px;
 }
 .highlight_left {
-  width: 100%;
+  width: 50%;
 }
 .highlight_right {
-  width: 100%;
+  width: 50%;
 }
 .highlight_text_lists {
   display: flex;
@@ -60,6 +63,7 @@
   font-size: 24px;
   line-height: 35px;
   color: #191825;
+  margin-bottom: 0;
 }
 .highlight_para {
   font-family: "Poppins";
@@ -79,4 +83,33 @@
 }
 .highlight_left p {
   padding: 20px 0 15px 0;
+}
+
+@media only screen and (max-width: 1300px){
+  .highlight_container {
+    padding: 100px 20px;
+}
+}
+@media only screen and (max-width: 1180px){
+  .highlight_container {
+    padding: 50px 20px;
+}
+.highlight_heading {
+  font-size: 22px;
+  line-height: 22px;
+}
+.highlight_num {
+  height: 40px;
+  font-size: 22px;
+  line-height: 22px;
+  width: 40px;
+}
+}
+@media only screen and (max-width: 768px){
+  .highlight_container{
+    display: block;
+  }
+  .highlight_left,.highlight_right{
+    width: 100%;
+  }
 }

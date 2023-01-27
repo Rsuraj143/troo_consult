@@ -182,15 +182,18 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
 .skill_container {
   max-width: 1300px;
   background: #ffffff;
-  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+  box-shadow: 0px 6px 20px rgb(30 30 30 / 10%);
   border-radius: 5px;
   margin: 100px auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
 }
 .counts {
   font-family: "Jost";
@@ -213,21 +216,30 @@
   opacity: 0.05;
   position: absolute;
   margin-bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .skill_container .cards {
-  padding: 20px 120px;
-  border-right: 2px solid #19182520;
-  display: flex;
-  justify-content: center;
+  padding: 20px 0px;
+  position: relative;
 }
-.skill_container .cards_last {
-  padding: 20px 120px;
-  display: flex;
-  justify-content: center;
+
+.contents::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 75px;
+  right: 0;
+  z-index: 99;
+  background: #191825;
+  opacity: 0.2;
+  background-color: rebeccapurple;
 }
 .contents {
   padding: 40px 0px;
   text-align: center;
+  flex: 1;
+  position: relative;
 }
 .skill_text {
   font-family: "Poppins";
@@ -238,4 +250,30 @@
   text-align: center;
   text-transform: capitalize;
   color: #191825;
+}
+
+@media only screen and (max-width: 1300px) {
+  .portfolio_banner_container {
+    padding: 80px 20px 240px 20px;
+  }
+  .portfolio_heading {
+    padding: 0 20px 30px 20px;
+  }
+  .skill_container {
+    margin: 70px 20px;
+}
+}
+@media only screen and (max-width: 1180px){
+  .counts {
+    font-size: 45px;
+}
+.transparent {
+  font-size: 80px;
+}
+.contents {
+  padding: 25px 0px;
+}
+}
+@media only screen and (max-width: 768px){
+  
 }

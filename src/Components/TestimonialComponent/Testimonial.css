@@ -118,4 +118,15 @@
   height: 85%;
 }
 
+@media only screen and (max-width: 1300px) {
+  .testimonmial_caurosel {
+    padding: 30px 0 85px 0;
+}
+.testimonmial_caurosel .react-multi-carousel-list .react-multi-carousel-dot-list {
+  bottom: 20px;
+}
+}
 
+@media only screen and (max-width: 768px){
+  
+}

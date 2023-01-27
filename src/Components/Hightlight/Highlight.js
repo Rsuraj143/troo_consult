@@ -16,7 +16,7 @@ const Highlight = () => {
             the industrey's standard dummy text ever since the 1500 when printed
             galley of type.
           </p>
-          <img src={highlightImg} alt="highlightImg" />
+          <img src={highlightImg} alt="highlightImg" className="width100" />
         </div>
         <div className="highlight_right">
           <div className="highlight_text_lists">

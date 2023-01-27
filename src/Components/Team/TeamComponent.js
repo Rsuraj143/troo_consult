@@ -24,16 +24,16 @@ const TeamComponent = () => {
     },
     desktop: {
       breakpoint: { max: 1440, min: 1200 },
-      items: 3,
+      items: 4,
       slidesToSlide: 2,
     },
     tablet: {
       breakpoint: { max: 1200, min: 767 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
-      items: 1,
+      items: 3,
     },
   };
   return (

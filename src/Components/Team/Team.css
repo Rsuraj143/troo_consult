@@ -223,3 +223,26 @@
   color: #191825;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 1300px){
+  .team_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px 0 20px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .consultant_inner_container::after {
+    width: 95%;
+    height: 87%;
+    transform: translate3d(15px, 15px, 0px);
+}
+.consultant_inner_container::before {
+  width: 95%;
+  height: 87%;
+  transform: translate3d(15px, 15px, 0px);
+}
+.consultation_text_cont {
+  padding: 46px 39px;
+}
+}

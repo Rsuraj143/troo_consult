@@ -125,3 +125,26 @@
 .continue_reading {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1300px){
+  .blogs_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 1180px){
+  .blogs_card_title h3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+}
+@media only screen and (max-width: 768px){
+  .blogs_cards_container{
+    display: block;
+  }
+  .blogs_card_header{
+    justify-content: space-between;
+  }
+}

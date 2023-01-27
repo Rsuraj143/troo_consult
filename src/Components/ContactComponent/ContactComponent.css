@@ -105,11 +105,11 @@
   --bs-accordion-border-width: 1px;
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 0 !important;
-  --bs-accordion-btn-padding-y: 0;
+  --bs-accordion-btn-padding-y: 0 ;
   --bs-accordion-btn-color: #212529;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url(../../Images/chevron_down.svg) !important;
-  --bs-accordion-btn-icon-width: 1.5rem;
+  --bs-accordion-btn-icon-width: 1rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url(../../Images/chevron_up.svg) !important;
@@ -173,7 +173,7 @@
   font-family: 'Jost';
   font-style: normal;
   font-weight: 700;
-  font-size: 19px !important;
+  font-size: 20px !important;
   line-height: 29px !important;
   color: #191825;
   column-gap: 11px ;
@@ -206,4 +206,33 @@
 }
 .accordian_btn{
   text-align: center;
+}
+
+@media only screen and (max-width: 1300px){
+  .contact_container {
+    padding: 227px 20px 50px 20px;
+  }
+}
+@media only screen and (max-width: 1180px){
+  .accordion-button{
+    font-size: 18px !important;
+  }
+  .accordion {
+    --bs-accordion-btn-padding-y: 10px !important ;
+  }
+}
+@media only screen and (max-width: 768px){
+  .contact_heading{
+    display: block;
+  }
+  .contact_left, .contact_right{
+    width: 100%;
+  }
+  .contact_right{
+    justify-content: space-between;
+  }
+  .contact_accordian_container{
+    display: block;
+  }
+  
 }

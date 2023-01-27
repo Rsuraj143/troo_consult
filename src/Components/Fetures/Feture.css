@@ -141,8 +141,29 @@
 .fetureCard:hover .layer_outer {
     transform: scaleY(1);
 }
-
-
+@media only screen and (max-width: 1300px){
+  .feture_section{
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 1180px){
+  .feture_heading_para::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+  }
+  .troo_video_container {
+    padding: 31px 20px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .feture_heading_cont{
+    display: block;
+  }
+  .feture_heading_para{
+    margin-top: 30px;
+  }
+}
 
 
   /* @media (min-width: 600px) {

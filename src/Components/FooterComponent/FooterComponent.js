@@ -38,7 +38,7 @@ const FooterComponent = () => {
         </div>
         <hr />
         <div className="footer_manu_container">
-          <div className="footer_manu_right">
+          <div className="footer_card">
             <div className="manu_right_logo">
               <div className="footer_logo">
                 <Link to="/">
@@ -60,6 +60,8 @@ const FooterComponent = () => {
                 <img src={Twitter} alt="facebook" />
               </div>
             </div>
+          </div>
+          <div className="footer_middle footer_card">
             <div className="manu_right_manu">
               <div className="footer_nav_manu">
                 <h4>Navigation</h4>
@@ -72,8 +74,6 @@ const FooterComponent = () => {
                 <li>In Press</li>
               </ul>
             </div>
-          </div>
-          <div className="footer_manu_left">
             <div className="manu_left_manu">
               <div className="footer_nav_manu">
                 <h4>FAQ</h4>
@@ -86,6 +86,8 @@ const FooterComponent = () => {
                 <li>Returns</li>
               </ul>
             </div>
+          </div>
+          <div className=" footer_card">
             <div className="manu_left_contact_us">
               <div className="contact_us_container">
                 <h3>CONTACT US</h3>
@@ -120,15 +122,16 @@ const FooterComponent = () => {
             </div>
           </div>
         </div>
+
         <hr className="dashed_line" />
         <div className="footer_bottom">
-            <p>Copyright © 2023. troothemes. All rights reserved.</p>
-            <div className="footer_term_condtion">
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
+          <p>Copyright © 2023. troothemes. All rights reserved.</p>
+          <div className="footer_term_condtion">
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
         </div>
-        <hr className="footer_bottom_hr"/>
+        <hr className="footer_bottom_hr" />
       </div>
     </div>
   );

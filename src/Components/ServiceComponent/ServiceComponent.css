@@ -13,7 +13,7 @@
 
 .service_sub_heading {
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .service_main_heading {
   display: flex;
@@ -135,6 +135,27 @@
   font-weight: 600;
 }
 
+
+@media only screen and (max-width: 1300px){
+  .troo_service_container {
+    padding: 50px 20px 50px 20px;
+  }
+  .service_main_heading {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 40px;
+}
+}
+@media only screen and (max-width: 1180px){
+  .service_main_heading {
+    font-size: 32px;
+    line-height: 32px;
+}
+}
+@media only screen and (max-width: 768px){
+  
+}
 /* @media (min-width: 600px) {
     .service_cards { grid-template-columns: repeat(2, 1fr); }
   }

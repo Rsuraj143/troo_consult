@@ -33,6 +33,7 @@
     font-size: 40px;
     line-height: 58px;
     color: #191825;
+    margin-bottom: 0;
 }
 .about_para{
     font-family: 'Poppins';
@@ -90,4 +91,40 @@ font-size: 16px;
 line-height: 24px;
 color: #232323;
 margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1300px){
+    .troo_aboutcontainer {
+        padding: 70px 20px 50px 20px;
+        column-gap: 55px;
+    }
+}
+@media only screen and (max-width: 1180px){
+    .troo_aboutcontainer {
+        padding: 50px 20px 50px 20px;
+        column-gap: 20px;
+    }
+    .section_header {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .about_para {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 8px 18px;
+    }
+    .about_heighlight {
+        padding: 5px 0;
+    }
+    .subheading {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .troo_aboutcontainer{
+        display: block;
+    }
+    .aboutimg {
+        width: 100%;
+    }
 }

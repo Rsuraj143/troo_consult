@@ -73,10 +73,9 @@ const ContactComponent = () => {
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>
-                      {" "}
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       What’s the difference a consultant and a coach?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -90,7 +89,7 @@ const ContactComponent = () => {
                     <Accordion.Header>
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       What kind of experience does your business consulting?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -102,10 +101,9 @@ const ContactComponent = () => {
                   </Accordion.Item>
                   <Accordion.Item eventKey="4">
                     <Accordion.Header>
-                      {" "}
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       What are the terms of working a business consultant?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -123,7 +121,7 @@ const ContactComponent = () => {
                     <Accordion.Header>
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       How to Getting Started your Business?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -137,7 +135,7 @@ const ContactComponent = () => {
                     <Accordion.Header>
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       How much does it cost to hire a business consultant?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -149,10 +147,9 @@ const ContactComponent = () => {
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>
-                      {" "}
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       What industries or businesses do you specialize in?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -166,7 +163,7 @@ const ContactComponent = () => {
                     <Accordion.Header>
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       How do you price your services?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -178,10 +175,9 @@ const ContactComponent = () => {
                   </Accordion.Item>
                   <Accordion.Item eventKey="4">
                     <Accordion.Header>
-                      {" "}
                       <span className="questionmark">
                         <FaQuestion />
-                      </span>{" "}
+                      </span>
                       Do you offer a free consultation?
                     </Accordion.Header>
                     <Accordion.Body>
