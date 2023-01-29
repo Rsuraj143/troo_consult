@@ -29,7 +29,7 @@ const FooterComponent = () => {
               placeholder="Enter your email"
               className="scarch"
             />
-            <Link>
+            <Link className="scarch_btn">
               <button className="normal_btn">
                 <p className="subscribe_btn_text">Subscribe Now +</p>
               </button>

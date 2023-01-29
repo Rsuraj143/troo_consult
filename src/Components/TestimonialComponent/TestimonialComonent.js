@@ -40,8 +40,8 @@ const TestimonialComonent = () => {
           <h5 className="subheading service_sub_heading">
           Clients Testtimonials
           </h5>
-          <h2 className="section_header text-center">What our clients say</h2>
-          <h2 className="section_header text-center">about our services</h2>
+          <h2 className="section_header T_header">What our clients say</h2>
+          <h2 className="section_header T_header">about our services</h2>
         </div>
         <div className="testimonmial_caurosel">
         <Carousel
@@ -70,7 +70,7 @@ const TestimonialComonent = () => {
               of the printing and standard dummy text.
             </p>
             <div className="testimonial_profile">
-              <img src={testimonial_img1} alt="testimonial_img1" />
+              <img src={testimonial_img1} alt="testimonial_img1" className="feedback_person" />
               <div>
                 <h4>Michael Hensley</h4>
                 <p>Business Manager</p>
@@ -97,7 +97,7 @@ const TestimonialComonent = () => {
               of the printing and standard dummy text.
             </p>
             <div className="testimonial_profile">
-              <img src={testimonial_img2} alt="testimonial_img2" />
+              <img src={testimonial_img2} alt="testimonial_img2" className="feedback_person" />
               <div>
                 <h4>Michael Hensley</h4>
                 <p>Business Manager</p>
@@ -124,7 +124,7 @@ const TestimonialComonent = () => {
               of the printing and standard dummy text.
             </p>
             <div className="testimonial_profile">
-              <img src={testimonial_img1} alt="testimonial_img1" />
+              <img src={testimonial_img1} alt="testimonial_img1" className="feedback_person" />
               <div>
                 <h4>Michael Hensley</h4>
                 <p>Business Manager</p>

@@ -106,7 +106,7 @@
   background-position: center;
   position: relative;
 }
-.team_consultation_container::after{
+.team_consultation_container::after {
   position: absolute;
   content: "";
   top: 0;
@@ -123,16 +123,16 @@
 }
 .consultant_inner_container::before {
   content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-image: url(../../Images//consultation_bg.png);
-    background-repeat: no-repeat;
-    width: 95%;
-    height: 84%;
-    background-position: center;
-    z-index: 1;
-    transform: translate3d(30px, 30px, 0px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url(../../Images//consultation_bg.png);
+  background-repeat: no-repeat;
+  width: 95%;
+  height: 84%;
+  background-position: center;
+  z-index: 1;
+  transform: translate3d(30px, 30px, 0px);
 }
 .consultant_inner_container::after {
   content: "";
@@ -163,13 +163,13 @@
   width: 50%;
   z-index: 99;
 }
-.consult_left h2{
-  color: #FFFFFF;
+.consult_left h2 {
+  color: #ffffff;
 }
-.j_animate{
+.j_animate {
   width: 30%;
 }
-.consult_btn{
+.consult_btn {
   display: flex;
   align-items: center;
 }
@@ -180,7 +180,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  color:black;
+  color: black;
   background: #0059ff;
   padding: 15px 20px;
   border-radius: 5px;
@@ -214,7 +214,7 @@
   width: 0;
 }
 .consultant_btn_text {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -224,25 +224,40 @@
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1300px) {
   .team_container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 50px 20px 0 20px;
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .consultant_inner_container::after {
     width: 95%;
     height: 87%;
     transform: translate3d(15px, 15px, 0px);
+  }
+  .consultant_inner_container::before {
+    width: 95%;
+    height: 87%;
+    transform: translate3d(15px, 15px, 0px);
+  }
+  .consultation_text_cont {
+    padding: 46px 39px;
+  }
 }
-.consultant_inner_container::before {
-  width: 95%;
-  height: 87%;
-  transform: translate3d(15px, 15px, 0px);
+
+@media only screen and (max-width: 540px) {
+  .team_carousel_container {
+    padding: 10px 0 30px 0;
+  }
+  .team_icon_cont {
+    bottom: 115px;
+    padding: 10px 2px;
 }
-.consultation_text_cont {
-  padding: 46px 39px;
+.team_text_container {
+  padding: 25px 27px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 }

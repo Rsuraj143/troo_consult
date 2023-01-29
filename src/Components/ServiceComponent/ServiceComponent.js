@@ -39,7 +39,7 @@ const ServiceComponent = () => {
                   diam inta nonu my eirmod.
                 </p>
                 <Link to="">
-                  <h5>View Detail</h5>
+                  <h5 className="view_dtls">View Detail</h5>
                 </Link>
               </div>
             </div>
@@ -60,8 +60,8 @@ const ServiceComponent = () => {
                   Lorem ipsum dolor sit abet, consetetur sadipscing elitr, sed
                   diam inta nonu my eirmod.
                 </p>
-                <Link to="">
-                  <h5>View Detail</h5>
+                <Link to="" >
+                  <h5 className="view_dtls">View Detail</h5>
                 </Link>
               </div>
             </div>
@@ -83,7 +83,7 @@ const ServiceComponent = () => {
                   diam inta nonu my eirmod.
                 </p>
                 <Link to="">
-                  <h5>View Detail</h5>
+                  <h5 className="view_dtls">View Detail</h5>
                 </Link>
               </div>
             </div>
@@ -105,7 +105,7 @@ const ServiceComponent = () => {
                   diam inta nonu my eirmod.
                 </p>
                 <Link to="">
-                  <h5>View Detail</h5>
+                  <h5 className="view_dtls">View Detail</h5>
                 </Link>
               </div>
             </div>
@@ -128,7 +128,7 @@ const ServiceComponent = () => {
                   diam inta nonu my eirmod.
                 </p>
                 <Link to="">
-                  <h5>View Detail</h5>
+                  <h5 className="view_dtls">View Detail</h5>
                 </Link>
               </div>
             </div>
@@ -150,7 +150,7 @@ const ServiceComponent = () => {
                   diam inta nonu my eirmod.
                 </p>
                 <Link to="">
-                  <h5>View Detail</h5>
+                  <h5 className="view_dtls">View Detail</h5>
                 </Link>
               </div>
             </div>

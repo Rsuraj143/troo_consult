@@ -20,7 +20,7 @@
   width: 100%;
   z-index: -1;
 }
-.width100{
+.width100 {
   width: 100%;
 }
 .highlight_container {
@@ -85,31 +85,52 @@
   padding: 20px 0 15px 0;
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1300px) {
   .highlight_container {
     padding: 100px 20px;
+  }
 }
-}
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1180px) {
   .highlight_container {
     padding: 50px 20px;
-}
-.highlight_heading {
-  font-size: 22px;
-  line-height: 22px;
-}
-.highlight_num {
-  height: 40px;
-  font-size: 22px;
-  line-height: 22px;
-  width: 40px;
-}
-}
-@media only screen and (max-width: 768px){
-  .highlight_container{
-    display: block;
   }
-  .highlight_left,.highlight_right{
+  .highlight_heading {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .highlight_num {
+    height: 40px;
+    font-size: 22px;
+    line-height: 22px;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .highlight_container {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .highlight_left,
+  .highlight_right {
     width: 100%;
   }
+  .highlight_section::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .highlight_heading {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .highlight_para {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .highlight_num {
+    height: 35px;
+    font-size: 19px;
+    line-height: 19px;
+    width: 35px;
+}
 }

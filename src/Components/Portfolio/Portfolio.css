@@ -169,7 +169,7 @@
   opacity: 1;
   transition: 0.8s all;
 }
-.blog_block_heading {
+.portfolio_block_heading {
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
@@ -251,6 +251,17 @@
   text-transform: capitalize;
   color: #191825;
 }
+.portfolio_blog_para {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #191825;
+  margin-bottom: 0;
+}
 
 @media only screen and (max-width: 1300px) {
   .portfolio_banner_container {
@@ -261,19 +272,67 @@
   }
   .skill_container {
     margin: 70px 20px;
+  }
 }
-}
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1180px) {
   .counts {
     font-size: 45px;
+  }
+  .transparent {
+    font-size: 80px;
+  }
+  .contents {
+    padding: 25px 0px;
+  }
 }
-.transparent {
-  font-size: 80px;
+@media only screen and (max-width: 768px) {
+  .skill_container {
+    margin: 40px 20px;
+  }
+  .contents {
+    padding: 10px 0px;
+  }
+  .transparent {
+    font-size: 50px;
+  }
+  .counts {
+    font-size: 30px;
+  }
+  .skill_text {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
-.contents {
-  padding: 25px 0px;
-}
-}
-@media only screen and (max-width: 768px){
-  
+@media only screen and (max-width: 540px) {
+  .portfolio_block_heading {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .block_circle {
+    bottom: 82px;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+  }
+  .skill_container .cards {
+    padding: 10px 0px;
+  }
+  .transparent {
+    font-size: 40px;
+  }
+  .counts {
+    font-size: 25px;
+  }
+  .contents::before {
+    height: 40px;
+  }
+  .portfolio_text_cont {
+    bottom: 25px;
+    width: 80%;
+    padding: 10px 10px;
+  }
+  .portfolio_blog_para {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

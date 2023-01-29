@@ -1,152 +1,153 @@
-.feture_text_container{
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 30px 0 0px 0;
+.feture_text_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 0 0px 0;
 }
-.feture_heading_cont{
-    display: flex;
-    justify-content: space-between;
+.feture_heading_cont {
+  display: flex;
+  justify-content: space-between;
 }
-.feture_heading_para::before{
-    content: "";
-    width: 142px;
-    height: 142px;
-    display: inline-block;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 15%;
-    transform: translateY(-50%);
-    z-index: -11;
-    background: linear-gradient(90deg, #673AB7 0%, #512DA8 100%);
-    opacity: 0.05;
+.feture_heading_para::before {
+  content: "";
+  width: 142px;
+  height: 142px;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  transform: translateY(-50%);
+  z-index: -11;
+  background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
+  opacity: 0.05;
 }
-.feture_heading_para{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    position: relative;
-    color: #191825;
-    z-index: 999;
-    padding-left: 40px;
-    margin-bottom: 0rem;
+.feture_heading_para {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+  color: #191825;
+  z-index: 999;
+  padding-left: 40px;
+  margin-bottom: 0rem;
 }
-.feture_heading_right{
-    padding-top: 15px;
+.feture_heading_right {
+  padding-top: 15px;
 }
-.feture_card_section{
-    background-image: url(../../Images//feture_bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
+.feture_card_section {
+  background-image: url(../../Images//feture_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 .feture_cards {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 35px 0;
-    
-  }
-  .fetureCard{
-    position: relative;
-    background: #FFFFFF;
-    border-radius: 5px;
-    text-align: center;
-    padding: 30px 15px 15px 15px
-  }
-  .fetureCard:hover{
-    opacity: 0.9;
-    box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
-    border-radius: 5px;
-  }
-  .fetureCard:hover .feture_card_para{
-    color: #ffff;
-    transition: 2s all;
-  } 
-  .fetureCard:hover .feture_card_header{
-    color: #ffff;
-    transition: 2s all;
-  }
-  .fetureCard:hover .feture_card_img{
-    border: 4px solid #512DA8  ;
-  }
-  .feture_card_img{
-   padding: 10px;
-   border: 2px solid #FFFFFF30;
-   border-radius: 50%;
-   background: #673AB7;
-  }
-  h3{
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 35px;
-  }
-  .feture_card_header{
-    padding: 30px 0 0 0;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 35px;
-    color: #FFFFFF;
-  }
-  .feture_card_para {
-    padding: 15px 10px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 35px 0;
+}
+.fetureCard {
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px 15px 15px 15px;
+  opacity: 0.9;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+}
+.fetureCard:hover {
+  opacity: 0.9;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+  border-radius: 5px;
+}
+.fetureCard:hover .feture_card_para {
+  color: #ffff;
+  transition: 2s all;
+}
+.fetureCard:hover .feture_card_header {
+  color: #ffff;
+  transition: 2s all;
+}
+.fetureCard:hover .feture_card_img {
+  border: 4px solid #512da8;
+}
+.feture_card_img {
+  padding: 10px;
+  border: 2px solid #ffffff30;
+  border-radius: 50%;
+  background: #673ab7;
+}
+h3 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+}
+.feture_card_header {
+  padding: 30px 0 0 0;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #191825;
+}
+.feture_card_para {
+  padding: 15px 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
 }
 .layer_outer {
-    background-image: url(../../Images/feture_card_bg.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: top;
-    transition-delay: .1s;
-    transition-timing-function: ease-in-out;
-    transition-duration: .5s;
-    transition-property: all;
-    opacity: 1;
-    transform-origin: top;
-    transform-style: preserve-3d;
-    transform: scaleY(0);
-    z-index: -1;
+  background-image: url(../../Images/feture_card_bg.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: top;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
 }
 .layer_outer:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #512DA8;
-    opacity: 0.9;
-    content: "";
-    border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #512da8;
+  opacity: 0.9;
+  content: "";
+  border-radius: 7px;
 }
 .fetureCard:hover .layer_outer {
-    transform: scaleY(1);
+  transform: scaleY(1);
 }
-@media only screen and (max-width: 1300px){
-  .feture_section{
+@media only screen and (max-width: 1300px) {
+  .feture_section {
     padding: 0 20px;
   }
 }
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1180px) {
   .feture_heading_para::before {
     content: "";
     width: 90px;
@@ -156,17 +157,46 @@
     padding: 31px 20px;
   }
 }
-@media only screen and (max-width: 768px){
-  .feture_heading_cont{
+@media only screen and (max-width: 768px) {
+  .feture_heading_cont {
     display: block;
   }
-  .feture_heading_para{
+  .feture_heading_para {
     margin-top: 30px;
   }
 }
+@media only screen and (max-width: 540px) {
+  .feture_text_container {
+    padding: 10px 0 0px 0;
+  }
+  .feture_heading_para {
+    margin-top: 15px;
+  }
+  .feture_heading_para {
+    font-size: 12px;
+    line-height: 19px;
+    padding-left: 23px;
+  }
+  .feture_heading_para::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+  }
+  .feture_card_img {
+    width: 15%;
+  }
+  .feture_card_header {
+    padding: 25px 0 0 0;
+    font-size: 19px;
+    line-height: 15px;
+  }
+  .feture_card_para {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
 
-
-  /* @media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .feture_cards { grid-template-columns: repeat(2, 1fr); }
   }
   @media (min-width: 900px) {

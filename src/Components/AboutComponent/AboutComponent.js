@@ -37,19 +37,19 @@ const AboutComponent = () => {
           </div>
           <div className="about_heighlight_cont">
             <div className="about_heighlight">
-              <img src={about_para_icon} alt="about_para_icon" />
+              <div><img src={about_para_icon} alt="about_para_icon" className="width7" /></div>
               <p>Emergency response time is one hour or less guaranteed.</p>
             </div>
             <div className="about_heighlight">
-              <img src={about_para_icon} alt="about_para_icon" />
+            <div><img src={about_para_icon} alt="about_para_icon" className="width7" /></div>
               <p>Until the eleifend elit is a lot of great facilities.</p>
             </div>
             <div className="about_heighlight">
-              <img src={about_para_icon} alt="about_para_icon" />
+            <div><img src={about_para_icon} alt="about_para_icon" className="width7" /></div>
               <p>Lorem Ipsum is simply dummy text</p>
             </div>
             <div className="about_heighlight">
-              <img src={about_para_icon} alt="about_para_icon" />
+            <div><img src={about_para_icon} alt="about_para_icon" className="width7" /></div>
               <p>Lorem Ipsum is simply dummy text of the printing.</p>
             </div>
           </div>

@@ -203,12 +203,12 @@ form {
   line-height: 24px;
   color: #000000;
 }
-.footer_middle{
+.footer_middle {
   display: flex;
-}
-.footer_card{
-  width: 33.33%;
   column-gap: 140px;
+}
+.footer_card {
+  width: 33.33%;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -229,17 +229,77 @@ form {
     column-gap: 50px;
   }
 }
-@media only screen and (max-width: 768px){
-  .footer_manu_container{
-    display: block;
+@media only screen and (max-width: 950px) {
+  .footer_middle {
+    column-gap: 30px;
   }
-  .manu_right_logo{
-    width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .footer_manu_container {
+    flex-direction: column;
+    row-gap: 20px;
   }
-  .manu_right_manu{
-    width: 50%;
+  .footer_card {
+    width: 100%;
   }
-  .manu_left_contact_us{
-    width: 50%;
+  .footer_logo {
+    width: 40%;
+  }
+  .footer_middle {
+    column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .footer_header p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  form {
+    margin-top: 20px;
+  }
+  .scarch {
+    width: 100%;
+    height: 45px;
+  }
+  .scarch_btn {
+    display: flex;
+    margin-top: 10px;
+  }
+  .footer_header {
+    padding: 40px 0 0 0;
+  }
+  .footer_manu_container {
+    padding: 25px 0 35px 0;
+  }
+  .footer_logo_para p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 15px 0;
+  }
+  .footer_nav_manu h4 {
+    font-size: 17px;
+  }
+  .footer_list li {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 0 0 0;
+  }
+  .contact_us_container {
+    padding: 20px;
+  }
+  .contact_us_container h3 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .footer_address_details p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer_address_details h4 {
+    font-size: 16px;
+    line-height: 25px;
   }
 }

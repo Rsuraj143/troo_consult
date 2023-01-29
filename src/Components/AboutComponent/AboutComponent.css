@@ -92,6 +92,9 @@ line-height: 24px;
 color: #232323;
 margin-bottom: 0;
 }
+.width7{
+    width: 25px;
+}
 
 @media only screen and (max-width: 1300px){
     .troo_aboutcontainer {
@@ -122,9 +125,43 @@ margin-bottom: 0;
 }
 @media only screen and (max-width: 768px){
     .troo_aboutcontainer{
-        display: block;
+        flex-direction: column;
+        padding: 50px 20px 10px 20px;
+        row-gap: 30px;
     }
     .aboutimg {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 540px){
+    .section_header {
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .about_para {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 8px 10px;
+    }
+    .about_cont_devider h4 {
+        font-size: 15px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+    .about_cont_devider p {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 8px 0 0 0;
+    }
+    .about_heighlight_cont {
+        padding: 7px 0 20px;
+    }
+    .width7{
+        width: 20px;
+    }
+    .about_heighlight p {
+        font-size: 12px;
+        line-height: 24px;
     }
 }

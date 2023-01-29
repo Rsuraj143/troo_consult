@@ -79,33 +79,36 @@
   color: #673ab7;
   font-weight: 700;
 }
-.find_contact p{
-    margin-top: 0;
-    margin-bottom: 0;
+.find_contact p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.phone_text_cont p{
-    margin-top: 0;
-    margin-bottom: 0;
+.phone_text_cont p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.contact_accordian_container{
+.contact_accordian_container {
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
   column-gap: 30px;
 }
-.accordion_contact_left,.accordion_ncontact_right{
+.accordion_contact_left,
+.accordion_ncontact_right {
   width: 100%;
 }
 
 .accordion {
   --bs-accordion-color: #212529;
   --bs-accordion-bg: #fff;
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 0 !important;
-  --bs-accordion-btn-padding-y: 0 ;
+  --bs-accordion-btn-padding-y: 0;
   --bs-accordion-btn-color: #212529;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url(../../Images/chevron_down.svg) !important;
@@ -117,13 +120,13 @@
   --bs-accordion-btn-focus-box-shadow: none !important;
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-body-padding-y: 0;
-  --bs-accordion-active-color: #512DA8 !important;
-  --bs-accordion-active-bg:white !important;
+  --bs-accordion-active-color: #512da8 !important;
+  --bs-accordion-active-bg: white !important;
   max-width: 100%;
 }
 .accordion-item:first-of-type {
-  border-top-left-radius: 0; 
-  border-top-right-radius: 0; 
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .accordion-item:last-of-type {
   border-bottom-right-radius: 0;
@@ -143,7 +146,7 @@
 .accordion-item {
   color: var(--bs-accordion-color);
   background-color: var(--bs-accordion-bg);
-  border:none;
+  border: none;
   margin-bottom: 20px;
   padding: 6px 20px;
   box-shadow: 0px -6px 20px rgb(0 0 0 / 5%), 0px 8px 20px rgb(0 0 0 / 5%);
@@ -153,8 +156,8 @@
 }
 
 .accordion-item:last-of-type {
-  border-bottom-right-radius:none;
-  border-bottom-left-radius: none; 
+  border-bottom-right-radius: none;
+  border-bottom-left-radius: none;
 }
 .accordion-button {
   position: relative;
@@ -170,22 +173,22 @@
   border-radius: 0;
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
   font-size: 20px !important;
   line-height: 29px !important;
   color: #191825;
-  column-gap: 11px ;
+  column-gap: 11px;
 }
 .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
   background-color: none;
   box-shadow: none !important;
 }
-.accordion-body{
+.accordion-body {
   padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -197,42 +200,69 @@
 .questionmark {
   height: 30px;
   width: 30px;
-  background-color: #512DA810;
+  background-color: #512da810;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 15px;
 }
-.accordian_btn{
+.accordian_btn {
   text-align: center;
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1300px) {
   .contact_container {
     padding: 227px 20px 50px 20px;
   }
 }
-@media only screen and (max-width: 1180px){
-  .accordion-button{
+@media only screen and (max-width: 1180px) {
+  .accordion-button {
     font-size: 18px !important;
   }
   .accordion {
     --bs-accordion-btn-padding-y: 10px !important ;
   }
 }
-@media only screen and (max-width: 768px){
-  .contact_heading{
+@media only screen and (max-width: 768px) {
+  .contact_heading {
     display: block;
   }
-  .contact_left, .contact_right{
+  .contact_left,
+  .contact_right {
     width: 100%;
   }
-  .contact_right{
+  .contact_right {
     justify-content: space-between;
   }
-  .contact_accordian_container{
-    display: block;
+  .contact_accordian_container {
+    flex-direction: column;
+    row-gap: 30px;
   }
-  
+}
+
+@media only screen and (max-width: 540px) {
+  .contact_btn_inner {
+    padding: 0px 0px;
+  }
+  .accordion-button {
+    font-size: 15px !important;
+    padding: 5px 0 !important;
+  }
+  .accordion-body {
+    padding: 5px 0 !important;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contact_accordian_container {
+    padding: 5px 0;
+  }
+  .contact_container {
+    padding: 210px 20px 20px 20px;
+}
+.questionmark {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+}
 }

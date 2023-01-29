@@ -33,7 +33,7 @@ const TeamComponent = () => {
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
-      items: 3,
+      items: 1,
     },
   };
   return (

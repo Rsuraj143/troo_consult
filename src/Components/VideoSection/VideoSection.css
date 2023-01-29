@@ -147,3 +147,8 @@
     display: none;
   }
 }
+@media only screen and (max-width: 540px){
+  .troo_video_container {
+    padding: 20px 20px;
+  }
+}

@@ -21,7 +21,7 @@
 .testimonial_para {
   padding: 25px 0;
   border-bottom: 2px solid #673ab710;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -106,7 +106,10 @@
   cursor: pointer;
 }
 
-
+.T_header {
+  text-align: center;
+  margin-bottom: 0;
+}
 
 .troo_banner_img {
   width: 100%;
@@ -117,16 +120,42 @@
   width: 85%;
   height: 85%;
 }
+.feedback_person {
+  width: 10%;
+}
 
 @media only screen and (max-width: 1300px) {
   .testimonmial_caurosel {
     padding: 30px 0 85px 0;
-}
-.testimonmial_caurosel .react-multi-carousel-list .react-multi-carousel-dot-list {
-  bottom: 20px;
-}
+  }
+  .testimonmial_caurosel
+    .react-multi-carousel-list
+    .react-multi-carousel-dot-list {
+    bottom: 20px;
+  }
 }
 
-@media only screen and (max-width: 768px){
-  
+@media only screen and (max-width: 768px) {
+  .testimonial_cards {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .testimonial_para {
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .testimonial_profile {
+    margin-top: 12px;
+    column-gap: 10px;
+  }
+  .testimonial_profile h4 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .feedback_person {
+    width: 20%;
+  }
 }

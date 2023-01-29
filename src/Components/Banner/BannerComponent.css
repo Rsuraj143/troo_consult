@@ -226,7 +226,7 @@ p {
   }
   .troo_banner_text_container h5 {
     font-size: 13px;
-    line-height: 16px
+    line-height: 16px;
   }
   .banner_subtext {
     width: 178px;
@@ -234,11 +234,40 @@ p {
   .banner_btn_text {
     font-size: 10px;
     line-height: 10px;
+  }
+  .bannerBtn:before {
+    width: 30px;
+    height: 30px;
+    left: -5px;
+    top: -5px;
+  }
 }
-.bannerBtn:before {
-  width: 30px;
-  height: 30px;
-  left: -5px;
-  top: -5px
+@media only screen and (max-width: 540px) {
+  .troo_banner_text_container {
+    padding: 75px 20px 0px 20px;
+  }
+  .troo_banner_text_container h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .banner_main_heading {
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .banner_subtext {
+    margin-bottom: 10px;
+}
+.troo_banner_img{
+  display: none;
+}
+.bannerImg{
+  display: none;
+}
+.troo_banner_container_fluid{
+  display: block;
 }
 }
+
