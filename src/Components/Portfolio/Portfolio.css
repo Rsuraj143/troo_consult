@@ -305,6 +305,12 @@
     font-size: 12px;
     line-height: 12px;
   }
+  .portfolio_carousel .react-multi-carousel-track {
+    column-gap: 0px;
+  }
+  .portfolio_carousel {
+    padding: 0 20px;
+  }
 }
 @media only screen and (max-width: 540px) {
   .portfolio_block_heading {
