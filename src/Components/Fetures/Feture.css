@@ -75,11 +75,11 @@
   transition: 2s all;
 }
 .fetureCard:hover .feture_card_img {
-  border: 4px solid #512da8;
+  border: 5px solid #ffffff30;
 }
 .feture_card_img {
   padding: 10px;
-  border: 2px solid #ffffff30;
+  border: 5px solid #ffffff;
   border-radius: 50%;
   background: #673ab7;
 }
@@ -183,7 +183,7 @@ h3 {
     height: 50px;
   }
   .feture_card_img {
-    width: 15%;
+    width: 75px;
   }
   .feture_card_header {
     padding: 25px 0 0 0;
@@ -194,6 +194,10 @@ h3 {
     font-size: 12px;
     line-height: 19px;
   }
+  .feture_cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 35px 0;
+}
 }
 
 /* @media (min-width: 600px) {

@@ -25,7 +25,7 @@
 .portfolio_banner_container {
   max-width: 1620px;
   margin: 0 auto;
-  padding: 80px 0 280px 0;
+  padding: 80px 0 270px 0;
 }
 .portfolio_testimonial_BG {
   position: relative;
@@ -34,9 +34,9 @@
 .portfolio_testimonial_BG::before {
   content: "";
   background-image: url(../../Images/testimonialBG.png);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -56,7 +56,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  margin-top: -232px;
+  margin-top: -260px;
 }
 .portfolio_subtext {
   background: linear-gradient(
@@ -122,7 +122,7 @@
 .btn_groups {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 20px;
 }
 .arrow_btn {
   border-radius: 50%;
@@ -130,7 +130,7 @@
   width: 40px;
   height: 40px;
   text-align: center;
-  line-height: 40px;
+  line-height: 35px;
   color: #ffff;
 }
 .portfolioHeading {
@@ -236,7 +236,7 @@
   background-color: rebeccapurple;
 }
 .contents {
-  padding: 40px 0px;
+  padding: 48px 0px;
   text-align: center;
   flex: 1;
   position: relative;
@@ -261,6 +261,9 @@
   text-transform: capitalize;
   color: #191825;
   margin-bottom: 0;
+}
+.portfolio_carousel .react-multi-carousel-track {
+  column-gap: 25px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -334,5 +337,14 @@
   .portfolio_blog_para {
     font-size: 12px;
     line-height: 16px;
+  }
+  .portfolio_banner_container {
+    padding: 20px 20px 94px 20px;
+  }
+  .portfolio_carosal_container {
+    margin-top: -80px;
+  }
+  .arrow_btn {
+    display: none;
   }
 }

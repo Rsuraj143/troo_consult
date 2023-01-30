@@ -6,7 +6,7 @@ import portfolioimg_1 from "../../Images/portfolioimg_1.png";
 import portfolioimg_2 from "../../Images/portfolioimg_2.png";
 import portfolioimg_3 from "../../Images/portfolioimg_3.png";
 import portfolioimg_4 from "../../Images/portfolioimg_4.png";
-import { FaPlus, FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaPlus, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import TestimonialComonent from "../TestimonialComponent/TestimonialComonent";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
@@ -24,18 +24,17 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
         onClick={() => previous()}
         ref={btn1}
       >
-        <FaAngleLeft />
+        <FaArrowLeft />
       </button>
       <button onClick={() => next()} ref={btn2}>
-        <FaAngleRight />
+        <FaArrowRight />
       </button>
     </div>
   );
 };
 
 const PortfolioComponent = () => {
-
-  const[counter, setCounter] = useState(false)
+  const [counter, setCounter] = useState(false);
 
   const btn1 = useRef();
   const btn2 = useRef();
@@ -82,207 +81,216 @@ const PortfolioComponent = () => {
             </h2>
             <div className="btn_groups">
               <div className="arrow_btn" onClick={handleLeft}>
-                <FaAngleLeft />
+                <FaArrowLeft />
               </div>
               <div className="arrow_btn" onClick={handleRight}>
-                <FaAngleRight />
+                <FaArrowRight />
               </div>
             </div>
           </div>
-          <Carousel
-            arrows={false}
-            responsive={responsive}
-            customButtonGroup={<ButtonGroup btn1={btn1} btn2={btn2} />}
-            infinite={true}
-          >
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_1}
-                  alt="portfolioimg_1"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+          <div className="portfolio_carousel">
+            <Carousel
+              arrows={false}
+              responsive={responsive}
+              customButtonGroup={<ButtonGroup btn1={btn1} btn2={btn2} />}
+              infinite={true}
+            >
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_1}
+                    alt="portfolioimg_1"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_2}
-                  alt="portfolioimg_2"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_2}
+                    alt="portfolioimg_2"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_3}
-                  alt="portfolioimg_3"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_3}
+                    alt="portfolioimg_3"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_4}
-                  alt="portfolioimg_4"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p>Consulting</p>
+                  <img
+                    src={portfolioimg_4}
+                    alt="portfolioimg_4"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p>Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_3}
-                  alt="portfolioimg_3"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_3}
+                    alt="portfolioimg_3"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_4}
-                  alt="portfolioimg_4"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para"> Consulting</p>
+                  <img
+                    src={portfolioimg_4}
+                    alt="portfolioimg_4"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para"> Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_3}
-                  alt="portfolioimg_3"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_3}
+                    alt="portfolioimg_3"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_4}
-                  alt="portfolioimg_4"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_4}
+                    alt="portfolioimg_4"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_3}
-                  alt="portfolioimg_3"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_3}
+                    alt="portfolioimg_3"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio_carosel_card">
-              <div>
-                <img
-                  src={portfolioimg_4}
-                  alt="portfolioimg_4"
-                  className="portfolioImg"
-                />
-              </div>
-              <div className="portfolio_text_cont">
+              <div className="portfolio_carosel_card">
                 <div>
-                  <h3 className="portfolio_block_heading">Business Growth</h3>
-                  <p className="portfolio_blog_para">Consulting</p>
+                  <img
+                    src={portfolioimg_4}
+                    alt="portfolioimg_4"
+                    className="portfolioImg"
+                  />
                 </div>
-                <div className="block_circle">
-                  <FaPlus />
+                <div className="portfolio_text_cont">
+                  <div>
+                    <h3 className="portfolio_block_heading">Business Growth</h3>
+                    <p className="portfolio_blog_para">Consulting</p>
+                  </div>
+                  <div className="block_circle">
+                    <FaPlus />
+                  </div>
                 </div>
               </div>
-            </div>
-          </Carousel>
+            </Carousel>
+          </div>
         </div>
         <div className="skill_container">
           <div className=" contents">
             <div className="cards">
               <p className="transparent">20</p>
-              <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
-                <p className="counts">{counter && <CountUp start={0} end={20} duration={1} delay={0}/>}</p>
+              <ScrollTrigger
+                onEnter={() => setCounter(true)}
+                onExit={() => setCounter(false)}
+              >
+                <p className="counts">
+                  {counter && (
+                    <CountUp start={0} end={20} duration={1} delay={0} />
+                  )}
+                </p>
               </ScrollTrigger>
               {/* <p className="counts">20</p> */}
             </div>
@@ -291,8 +299,16 @@ const PortfolioComponent = () => {
           <div className=" contents">
             <div className="cards">
               <p className="transparent">3k</p>
-              <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
-                <p className="counts">{counter && <CountUp start={0} end={2} duration={1} delay={0}/>}k</p>
+              <ScrollTrigger
+                onEnter={() => setCounter(true)}
+                onExit={() => setCounter(false)}
+              >
+                <p className="counts">
+                  {counter && (
+                    <CountUp start={0} end={2} duration={1} delay={0} />
+                  )}
+                  k
+                </p>
               </ScrollTrigger>
               {/* <p className="counts">3k</p> */}
             </div>
@@ -301,8 +317,16 @@ const PortfolioComponent = () => {
           <div className=" contents">
             <div className="cards">
               <p className="transparent">9k</p>
-              <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
-                <p className="counts">{counter && <CountUp start={0} end={9} duration={1} delay={0}/>}k</p>
+              <ScrollTrigger
+                onEnter={() => setCounter(true)}
+                onExit={() => setCounter(false)}
+              >
+                <p className="counts">
+                  {counter && (
+                    <CountUp start={0} end={9} duration={1} delay={0} />
+                  )}
+                  k
+                </p>
               </ScrollTrigger>
               {/* <p className="counts">9k</p> */}
             </div>
@@ -311,15 +335,22 @@ const PortfolioComponent = () => {
           <div className=" contents">
             <div className="cards">
               <p className="transparent">218</p>
-              <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
-                <p className="counts">{counter && <CountUp start={200} end={218} duration={1} delay={0}/>}</p>
+              <ScrollTrigger
+                onEnter={() => setCounter(true)}
+                onExit={() => setCounter(false)}
+              >
+                <p className="counts">
+                  {counter && (
+                    <CountUp start={200} end={218} duration={1} delay={0} />
+                  )}
+                </p>
               </ScrollTrigger>
               {/* <p className="counts">218</p> */}
             </div>
             <h4 className="skill_text">MEDIA ACTIVITIES</h4>
           </div>
         </div>
-        <TestimonialComonent/>
+        <TestimonialComonent />
       </div>
     </div>
   );

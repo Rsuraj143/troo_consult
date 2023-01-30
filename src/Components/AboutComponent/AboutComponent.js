@@ -14,7 +14,7 @@ const AboutComponent = () => {
           <h2 className="section_header">
             We are committed to providing our customers with exceptional.
           </h2>
-          <p className="about_para">
+          <p className="about_para left_line">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             inta nonumy eirmod tempor invidunt ut labore et.Lorem ipsum dolor
             sit amet, consetetur sadipscing elitr, sed diam.

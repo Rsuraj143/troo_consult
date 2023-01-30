@@ -6,19 +6,22 @@
 }
 .show_nav {
   position: fixed;
-  top: 0;
-  z-index: 99999;
+  top: -150px;
   width: 100%;
+  transition: top 0.3s;
+  z-index: 99999;
 }
 .troo_header {
   max-width: 1575px;
   margin: 0 auto;
-  position: relative;
   margin-bottom: -49px;
+  z-index: 999999;
 }
+
 .troo_header_address_section {
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 .troo_address {
   display: flex;
@@ -51,8 +54,8 @@
 .troo_address_header {
   display: flex;
   align-items: center;
-  border-left: 1px solid #673ab7;
-  border-right: 1px solid #673ab7;
+  border-left: 1px solid #673ab730;
+  border-right: 1px solid #673ab730;
   padding: 0 23px;
   font-family: "Poppins";
   font-style: normal;
@@ -106,8 +109,25 @@ h4 {
   transition: 0.5s;
   border-radius: 5px;
   justify-content: space-between;
-  border-top: 1px solid #673ab7;
+  border-top: 2px solid #673ab730;
   background: #ffff;
+  box-shadow: 0px 6px 20px rgba(30, 30, 30, 0.1);
+}
+.troo_nav_bar ul {
+  display: flex;
+  margin-bottom: 0;
+}
+.troo_nav_bar ul li a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #191825;
+  cursor: pointer;
+}
+.troo_nav_bar ul li a:hover {
+  color: #673ab7;
 }
 .navmanu_contain ul {
   margin-top: 0;
@@ -130,15 +150,23 @@ ul {
   line-height: 23px;
   color: #191825;
   text-decoration: none;
+  cursor: pointer;
+  position: relative;
 }
-.nav-manu a:hover {
-  border-bottom: 3px solid #512da8;
+
+.nav-manu  .active {
   padding-bottom: 12px;
-}
-.nav-manu .active {
-  padding-bottom: 12px;
   border-bottom: 3px solid #512da8;
+  color: #673ab7; 
 }
+.nav-manu li a::before{
+  contain: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 2px;
+}
+
 .webLogo {
   background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
   padding: 21px 22px;
@@ -250,15 +278,25 @@ ul {
 .drawer_close {
   transition: 0.7s;
 }
-.hamburger_btn_manu li {
-  padding: 15px 0;
-}
+
 .hamburger_btn_manu li a {
   font-size: 20px;
   color: white;
   text-decoration: none;
 }
-
+.drawer_manu ul {
+  padding-left: 0;
+  display: block;
+}
+.contact_drawer {
+  background-color: rgb(32, 20, 170);
+}
+.contact_drawer p {
+  margin-bottom: 0;
+}
+.drawer_manu ul .active{
+  color: #673ab7;
+}
 @media only screen and (max-width: 1500px) {
   .webLogo {
     padding: 12px 12px;
@@ -285,9 +323,7 @@ ul {
   .contact_class {
     display: none;
   }
-  .nav-manu {
-    margin-right: 20px;
-  }
+ 
   .logoImg {
     width: 90%;
   }
@@ -307,17 +343,23 @@ ul {
     z-index: -3;
     transition: 0.3s;
     display: none;
+    margin-right: 20px;
   }
+
   .troo_nav_bar {
     background-color: #512da8;
   }
   .drawer_manu {
     display: block;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 950px) {
   .logoImg {
     width: 80%;
+  }
+  .hamburger_btn_manu {
+    top: 78px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -326,5 +368,8 @@ ul {
   }
   .drawer_manu {
     display: block;
+  }
+  .hamburger_btn_manu {
+    width: 100%;
   }
 }

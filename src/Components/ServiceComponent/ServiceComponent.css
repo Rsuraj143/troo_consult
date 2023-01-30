@@ -4,6 +4,7 @@
   background-size: cover;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .troo_service_container {
   max-width: 1300px;
@@ -116,10 +117,22 @@
 .servicecard:hover .serviceBlock {
   opacity: 0;
 }
+
+.service_buttom_text h4::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../Images/Polygon.png);
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 95px;
+  top: -12px;
+  right: -40px;
+}
 .service_buttom_text {
   display: flex;
   justify-content: center;
   padding: 30px 0;
+  position: relative;
 }
 .service_buttom_text p {
   font-family: "Jost";
@@ -130,11 +143,14 @@
   text-align: center;
   color: #191825;
 }
+
 .service_buttom_text h4 {
   color: #673ab7;
   font-weight: 600;
+  margin-left: 10px;
+  position: relative;
 }
-.view_dtls{
+.view_dtls {
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -162,7 +178,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
- 
+  .troo_service_section{
+    background-image: none;
+  }
 }
 @media only screen and (max-width: 540px) {
   .service_main_heading {
@@ -177,20 +195,32 @@
     font-size: 19px;
     line-height: 25px;
   }
-  .view_dtls{
+  .view_dtls {
     font-size: 14px;
   }
   .troo_service_container {
     padding: 50px 20px 20px 20px;
+  }
+  .service_buttom_text {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+  }
+  .serviceBlock h3 {
+    font-size: 19px;
+    line-height: 15px;
+  }
+  .serviceBlock {
+    transform: translateX(10%);
+    width: 85%;
+    padding: 20px 10px;
 }
-.service_buttom_text {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0 10px 0;
+.service_buttom_text p {
+  font-size: 13px;
+  line-height: 29px;
 }
-.serviceBlock h3 {
-  font-size: 19px;
-  line-height: 15px;
+.service_buttom_text h4 {
+  font-size: 15px;
 }
 }
 /* @media (min-width: 600px) {
