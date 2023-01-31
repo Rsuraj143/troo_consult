@@ -127,10 +127,10 @@
 .arrow_btn {
   border-radius: 50%;
   border: 1px solid #ffff;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  line-height: 35px;
+  line-height: 45px;
   color: #ffff;
 }
 .portfolioHeading {
@@ -338,7 +338,7 @@
   .portfolio_text_cont {
     bottom: 25px;
     width: 80%;
-    padding: 10px 10px;
+    padding: 25px 10px;
   }
   .portfolio_blog_para {
     font-size: 12px;

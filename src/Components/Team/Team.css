@@ -17,6 +17,9 @@
 .team_img_bg {
   position: relative;
 }
+.team_btn{
+  padding: 14px 15px;
+}
 .team_img_bg::after {
   content: "";
   width: 100%;
@@ -67,7 +70,9 @@
   text-align: center;
   margin-bottom: 74px;
 }
-
+/* .react-multi-carousel-item {
+  max-width: 303px !important;
+} */
 .team_name {
   font-family: "Jost";
   font-style: normal;
@@ -227,12 +232,14 @@
   column-gap: 25px;
 }
 
+
 @media only screen and (max-width: 1300px) {
   .team_container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 50px 20px 0 20px;
   }
+
 }
 @media only screen and (max-width: 768px) {
   .consultant_inner_container::after {
@@ -265,5 +272,29 @@
   padding: 25px 27px;
   text-align: center;
   margin-bottom: 50px;
+}
+}
+@media only screen and (max-width: 414px){
+  .consultation_text_cont{
+    flex-direction: column;
+  }
+  .consult_left{
+    width: 100%;
+  }
+  .consult_right{
+    width: 100%;
+    justify-content: center;
+  }
+  .j_animate{
+    display: none;
+  }
+  .consultant_inner_container::before{
+    width: 90%;
+  }
+  .consultant_inner_container::after{
+    width: 90%;
+  }
+  .consultation_text_cont {
+    padding: 46px 30px;
 }
 }

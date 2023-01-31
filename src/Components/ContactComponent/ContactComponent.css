@@ -78,6 +78,9 @@
 .find_contact_highlight {
   color: #673ab7;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Jost";
 }
 .find_contact p {
   margin-top: 0;
@@ -193,13 +196,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #777777;
+  color: #191825;
   border-top: 1px solid #16161610;
   padding: 20px 0 10px 0;
 }
 .questionmark {
-  height: 30px;
-  width: 30px;
+  height: 29px;
+  width: 25px;
   background-color: #512da810;
   border-radius: 50%;
   display: flex;
@@ -209,6 +212,9 @@
 }
 .accordian_btn {
   text-align: center;
+}
+.cont_btn{
+  padding: 14px 23px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -259,10 +265,10 @@
   }
   .contact_container {
     padding: 210px 20px 20px 20px;
-}
-.questionmark {
-  height: 25px;
-  width: 25px;
-  font-size: 12px;
-}
+  }
+  .questionmark {
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+  }
 }

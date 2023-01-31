@@ -13,7 +13,7 @@
 }
 
 .troo_banner_text_container {
-  padding: 162px 0 325px 15%;
+  padding: 162px 0 407px 11%;
   width: 100%;
 }
 
@@ -52,8 +52,8 @@
     rgba(103, 58, 183, 0) 96.34%
   );
   border-radius: 5px;
-  width: 266px;
-  padding: 10px 10px;
+  width: 232px;
+  padding: 7px 10px;
   color: #fff;
   margin-bottom: 31px;
 }
@@ -99,10 +99,10 @@ p {
 .bannerBtn {
   color: #fff;
   font-weight: 700;
-  padding: 13px 8px;
+  padding: 13px 10px;
   letter-spacing: 1px;
   border-radius: 0;
-  border: 2px solid #ffffff;
+  border: 1px solid #673ab7;
   position: relative;
   z-index: 1;
   transition: all 0.3s ease-in-out;
@@ -118,7 +118,7 @@ p {
 }
 .bannerBtn:before {
   content: "";
-  background: linear-gradient(to right bottom, #ffff 50%, transparent 50%);
+  background: linear-gradient(to right bottom, #673ab7 50%, transparent 50%);
   width: 40px;
   height: 40px;
   position: absolute;
@@ -133,7 +133,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(to right bottom, #ffff 50%, #ffffff 100%);
+  background: linear-gradient(to right bottom, #673ab7 50%, #673ab7 100%);
 }
 
 /* nortmal btn */
@@ -145,7 +145,7 @@ p {
   line-height: 23px;
   color: #ffffff;
   background: #0059ff;
-  padding: 15px 20px;
+  padding: 13px 20px;
   border-radius: 5px;
   border: none;
   position: relative;
@@ -183,8 +183,8 @@ p {
   justify-content: end;
 }
 .bannerImg {
-  width: 85%;
-  height: 85%;
+  width: 100%;
+  height: 90%;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -259,15 +259,14 @@ p {
   }
   .banner_subtext {
     margin-bottom: 10px;
+  }
+  .troo_banner_img {
+    display: none;
+  }
+  .bannerImg {
+    display: none;
+  }
+  .troo_banner_container_fluid {
+    display: block;
+  }
 }
-.troo_banner_img{
-  display: none;
-}
-.bannerImg{
-  display: none;
-}
-.troo_banner_container_fluid{
-  display: block;
-}
-}
-

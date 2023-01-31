@@ -51,10 +51,10 @@ const PortfolioComponent = () => {
     },
     tablet: {
       breakpoint: { max: 1200, min: 767 },
-      items: 3,
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 767, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1,
     },
   };

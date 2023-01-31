@@ -29,7 +29,7 @@ const TeamComponent = () => {
     },
     tablet: {
       breakpoint: { max: 1200, min: 767 },
-      items: 3,
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
@@ -45,7 +45,7 @@ const TeamComponent = () => {
           <div>
             <Link>
               <button className="button">
-                <p className="btn_text">+ View All Member</p>
+                <p className="btn_text team_btn">+ View All Member</p>
               </button>
             </Link>
           </div>

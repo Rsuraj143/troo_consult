@@ -192,7 +192,7 @@ const ContactComponent = () => {
             </div>
             <div className="accordian_btn">
             <button className="button">
-              <p className="btn_text">+ View All FAQ’s</p>
+              <p className="btn_text cont_btn">+ View All FAQ’s</p>
             </button>
             </div>
           </div>

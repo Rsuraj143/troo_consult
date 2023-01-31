@@ -5,6 +5,8 @@ import digital_solution from "../../Images/digital_solution.svg";
 import product_eng from "../../Images/product_eng.svg";
 import technology_service from "../../Images/technology_service.svg";
 import arrowbtn from "../../Images/arrowbtn.svg";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from 'react-icons/fa';
 
 const Feture = () => {
   return (
@@ -33,7 +35,7 @@ const Feture = () => {
                     <h3 className="feture_card_header">Business Process</h3>
                     <p className="feture_card_para">There are many variations passages Lorem it is available, but we are the majority have.</p>
               </div>
-              <img src={arrowbtn} alt="arrowbtn"/>
+              <Link className="feture_ri8_arrow"><FaArrowRight/></Link>
             </div>
             <div class="fetureCard">
             <div class="layer_outer" ></div>
@@ -42,7 +44,7 @@ const Feture = () => {
                     <h3 className="feture_card_header">Digital Solutions</h3>
                     <p className="feture_card_para">There are many variations passages Lorem it is available, but we are the majority have.</p>
               </div>
-              <img src={arrowbtn} alt="arrowbtn"/>
+              <Link className="feture_ri8_arrow"><FaArrowRight/></Link>
             </div>
             <div class="fetureCard">
             <div class="layer_outer" ></div>
@@ -51,7 +53,7 @@ const Feture = () => {
                     <h3 className="feture_card_header">Product Engineering</h3>
                     <p className="feture_card_para">There are many variations passages Lorem it is available, but we are the majority have.</p>
               </div>
-              <img src={arrowbtn} alt="arrowbtn"/>
+              <Link className="feture_ri8_arrow"><FaArrowRight/></Link>
             </div>
             <div class="fetureCard">
             <div class="layer_outer" ></div>
@@ -60,7 +62,7 @@ const Feture = () => {
                     <h3 className="feture_card_header">Technology Services</h3>
                     <p className="feture_card_para">There are many variations passages Lorem it is available, but we are the majority have.</p>
               </div>
-              <img src={arrowbtn} alt="arrowbtn"/>
+              <Link  className="feture_ri8_arrow "><FaArrowRight/></Link>
             </div>
           </div>
         </div>

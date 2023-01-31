@@ -23,12 +23,12 @@
   max-width: 220px;
   padding: 10px 20px;
   margin-bottom: 40px;
-  font-family: "Poppins";
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #292929;
+  font-size: 16px;
+  line-height: 23px;
+  color: #191825;
 }
 
 .section_header {
@@ -50,8 +50,8 @@
   padding: 22px 24px;
 }
 
-.left_line{
-    position: relative;
+.left_line {
+  position: relative;
 }
 .left_line::before {
   content: "";
@@ -71,7 +71,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 29px;
   color: #191825;
 }
 h4 {
@@ -109,7 +109,7 @@ h4 {
   margin-bottom: 0;
 }
 .width7 {
-  width: 25px;
+  width: 22px;
 }
 
 @media only screen and (max-width: 1300px) {

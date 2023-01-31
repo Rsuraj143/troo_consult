@@ -50,9 +50,9 @@
   z-index: 1;
   position: absolute;
   bottom: 20px;
-  transform: translateX(30%);
-  width: 60%;
-  padding: 20px 15px;
+  transform: translateX(17%);
+  width: 73%;
+  padding: 16px 15px;
   background-color: #ffffff;
   border-radius: 5px;
 }
@@ -146,18 +146,19 @@
 
 .service_buttom_text h4 {
   color: #673ab7;
-  font-weight: 600;
+  font-weight: 500;
   margin-left: 10px;
   position: relative;
 }
 .view_dtls {
-  font-family: "Jost";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
-  color: #191825;
+  text-decoration-line: underline;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -178,7 +179,7 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .troo_service_section{
+  .troo_service_section {
     background-image: none;
   }
 }
@@ -214,14 +215,14 @@
     transform: translateX(10%);
     width: 85%;
     padding: 20px 10px;
-}
-.service_buttom_text p {
-  font-size: 13px;
-  line-height: 29px;
-}
-.service_buttom_text h4 {
-  font-size: 15px;
-}
+  }
+  .service_buttom_text p {
+    font-size: 13px;
+    line-height: 29px;
+  }
+  .service_buttom_text h4 {
+    font-size: 15px;
+  }
 }
 /* @media (min-width: 600px) {
     .service_cards { grid-template-columns: repeat(2, 1fr); }
