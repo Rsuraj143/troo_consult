@@ -27,6 +27,14 @@
   display: flex;
   column-gap: 33px;
 }
+.address_icons {
+  color: #673ab7;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .address_default h5 {
   font-family: "Poppins";
   font-style: normal;
@@ -123,7 +131,7 @@ h4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
-  color: #191825;
+  color: #191825 !important;
   cursor: pointer;
 }
 .troo_nav_bar ul li a:hover {
@@ -148,25 +156,27 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
-  color: #191825;
+  color: #191825 !important;
   text-decoration: none;
   cursor: pointer;
   position: relative;
 }
 
-.nav-manu  .active {
+.nav-manu .active {
   padding-bottom: 12px;
   border-bottom: 3px solid #512da8;
-  color: #673ab7; 
+  color: #673ab7;
 }
-.nav-manu li a::before{
+.nav-manu li a::before {
   contain: "";
   position: absolute;
   top: 0;
   width: 30px;
   height: 2px;
 }
-
+.btn_bk_apontmt{
+  padding: 13px 13px !important;
+}
 .webLogo {
   background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
   padding: 21px 22px;
@@ -294,7 +304,7 @@ ul {
 .contact_drawer p {
   margin-bottom: 0;
 }
-.drawer_manu ul .active{
+.drawer_manu ul .active {
   color: #673ab7;
 }
 @media only screen and (max-width: 1500px) {
@@ -323,7 +333,7 @@ ul {
   .contact_class {
     display: none;
   }
- 
+
   .logoImg {
     width: 90%;
   }

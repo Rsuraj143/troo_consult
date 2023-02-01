@@ -48,7 +48,7 @@
   margin-bottom: 0;
 }
 .testimonmial_caurosel {
-  padding: 30px 0 170px 0;
+  padding: 35px 0 170px 0;
 }
 .testimonmial_caurosel .react-multi-carousel-list {
   display: flex;
@@ -60,7 +60,7 @@
   .react-multi-carousel-list
   .react-multi-carousel-dot-list {
   position: absolute;
-  bottom: 95px;
+  bottom: 113px;
   display: flex;
   left: 0;
   right: 0;
@@ -110,13 +110,7 @@
 
 .T_header {
   text-align: center;
-  margin-bottom: 0;
-}
-
-.troo_banner_img {
-  width: 100%;
-  display: flex;
-  justify-content: end;
+  padding: 0 404px;
 }
 .feedback_person {
   width: 10%;

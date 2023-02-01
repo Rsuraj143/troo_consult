@@ -40,8 +40,7 @@ const TestimonialComonent = () => {
           <h5 className="subheading service_sub_heading">
             Clients Testtimonials
           </h5>
-          <h2 className="section_header T_header">What our clients say</h2>
-          <h2 className="section_header T_header">about our services</h2>
+          <h2 className="section_header T_header">What our clients say about our services</h2>
         </div>
         <div className="testimonmial_caurosel">
           <Carousel

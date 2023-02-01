@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BlogComponent.css";
+import { HiChevronDoubleRight } from 'react-icons/hi';
 
 const BlogsComponent = () => {
   return (
@@ -29,7 +30,7 @@ const BlogsComponent = () => {
                 industry. Lorem
               </p>
             </div>
-            <Link className="continue_reading"><p>Continue Reading &gt;&gt;</p></Link>
+            <Link className="continue_reading"><p>Continue Reading <HiChevronDoubleRight/></p></Link>
           </div>
           <div className="blogs_card">
           <div class="blog_bg"></div>
@@ -46,7 +47,7 @@ const BlogsComponent = () => {
                 industry. Lorem
               </p>
             </div>
-            <Link className="continue_reading"><p>Continue Reading &gt;&gt;</p></Link>
+            <Link className="continue_reading"><p>Continue Reading <HiChevronDoubleRight/></p></Link>
           </div>
           <div className="blogs_card">
           <div class="blog_bg"></div>
@@ -63,7 +64,7 @@ const BlogsComponent = () => {
                 industry. Lorem
               </p>
             </div>
-            <Link className="continue_reading"><p>Continue Reading &gt;&gt;</p></Link>
+            <Link className="continue_reading"><p>Continue Reading <HiChevronDoubleRight/></p></Link>
           </div>
         </div>
       </div>

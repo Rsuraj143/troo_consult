@@ -31,7 +31,7 @@
 .troo_video_container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 100px 15px;
+  padding: 92px 15px;
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
@@ -52,7 +52,7 @@
   color: #ffffff;
 }
 .videoHeader {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .video_container_right {

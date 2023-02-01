@@ -49,7 +49,7 @@ const HeaderComponent = () => {
           <div className="nav_bar_btn">
             <Link>
               <button className="button">
-                <p className="btn_text">+ Book A Appointment</p>
+                <p className="btn_text btn_bk_apontmt">+ Book A Appointment</p>
               </button>
             </Link>
           </div>
@@ -98,7 +98,7 @@ const HeaderComponent = () => {
           <div className="troo_address">
             <div className="troo_address_location">
               <span>
-                <CiLocationOn />
+                <CiLocationOn className="address_icons"/>
               </span>
               <span className="address_default">
                 <h5>4516 School Street, Danbury, CT, Canada</h5>
@@ -106,7 +106,7 @@ const HeaderComponent = () => {
             </div>
             <div className="troo_address_mail">
               <span>
-                <HiOutlineMailOpen />
+                <HiOutlineMailOpen className="address_icons"/>
               </span>
               <span className="address_default">
                 <h5>example@email.com</h5>
@@ -146,7 +146,7 @@ const HeaderComponent = () => {
           <div className="nav_bar_btn">
             <Link>
               <button className="button">
-                <p className="btn_text">+ Book A Appointment</p>
+                <p className="btn_text btn_bk_apontmt">+ Book A Appointment</p>
               </button>
             </Link>
           </div>

@@ -22,10 +22,16 @@
   margin: 0 auto;
 }
 .f_heading {
+  margin-bottom: 18px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
   text-align: center;
-  margin-bottom: 20px;
+  color: #191825;
 }
-.footer_header p {
+.footer_header_para {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -38,31 +44,52 @@
   margin-bottom: 0;
 }
 .footer_header {
-  padding: 82px 0 50px 0;
+  padding: 82px 0 57px 0;
   text-align: center;
 }
 .scarch {
   width: 500px;
-  height: 54px;
+  height: 50px;
   padding: 15px;
   border-radius: 5px;
   background-color: #512da800;
   border: 2px solid #512da820;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #777777;
 }
 form {
   margin-top: 40px;
 }
+.sub_btn {
+  padding: 14px 17px 13px 17px;
+}
 .subscribe_btn_text {
-  color: #ffffff !important;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 0;
 }
 .scarch:focus-visible {
   outline: none;
+}
+.customHR {
+  border: 0;
+  border-top: 1px solid #191825;
+  opacity: 0.1;
+  margin: 0;
 }
 .footer_manu_container {
   display: flex;
   justify-content: space-between;
   padding: 50px 0 35px 0;
-  column-gap: 40px;
+  column-gap: 50px;
 }
 
 .footer_logo_para p {
@@ -79,7 +106,7 @@ form {
   width: 50%;
 }
 .contact_us_container {
-  padding: 35px;
+  padding: 40px 35px;
   background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
   border-radius: 5px;
 }
@@ -90,6 +117,20 @@ form {
   font-size: 24px;
   line-height: 35px;
   color: #ffffff;
+  margin-bottom: 0;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.contact_us_container h3::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  z-index: 9;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
 }
 .call_detaile {
   display: flex;
@@ -98,7 +139,7 @@ form {
 .footer_logo {
   background: linear-gradient(90deg, #673ab7 0%, #512da8 100%);
   padding: 21px 22px;
-  width: 50%;
+  width: 64%;
 }
 .footer_address_icon {
   color: #ffffff;
@@ -122,14 +163,15 @@ form {
   font-size: 20px;
   line-height: 29px;
   color: #ffffff;
+  margin-bottom: 0;
 }
 .manu_left_manu ul {
-  margin-top: 0;
+  margin-top: 32px;
   margin-bottom: 0;
   padding-left: 0;
 }
 .manu_right_manu ul {
-  margin-top: 0;
+  margin-top: 32px;
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -168,7 +210,7 @@ form {
   font-size: 16px;
   line-height: 24px;
   color: #191825;
-  padding: 15px 0 0 0;
+  margin-bottom: 15px;
 }
 .footer_social_icons {
   display: flex;
@@ -189,6 +231,13 @@ form {
 }
 .footer_bottom p {
   margin-bottom: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.204545px;
+  color: #191825;
 }
 .footer_bottom_hr {
   border: 1px dashed #512da8;
@@ -202,13 +251,36 @@ form {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 0;
+}
+.footer_contacts{
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+}
+.footer_card_left {
+  width: 36%;
 }
 .footer_middle {
+  width: 35%;
   display: flex;
   column-gap: 140px;
 }
-.footer_card {
-  width: 33.33%;
+.footer_card_right {
+  width: 28%;
+}
+
+.form_cont {
+  position: relative;
+}
+.scarch_btn {
+  position: absolute;
+  transform: translate(-10%);
+}
+.trootheme {
+  font-weight: 700;
+  color: #673ab7;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1300px) {

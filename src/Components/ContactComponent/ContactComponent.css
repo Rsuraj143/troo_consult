@@ -151,7 +151,7 @@
   background-color: var(--bs-accordion-bg);
   border: none;
   margin-bottom: 20px;
-  padding: 6px 20px;
+  padding: 6px 18px;
   box-shadow: 0px -6px 20px rgb(0 0 0 / 5%), 0px 8px 20px rgb(0 0 0 / 5%);
 }
 .accordion-button:focus {

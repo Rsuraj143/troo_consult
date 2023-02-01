@@ -21,14 +21,14 @@ const AboutComponent = () => {
           </p>
           <div className="about_cont_devider">
             <div>
-              <h4>The Best Services -----</h4>
+              <h4 >The Best Services <span className="about_subheading_line"></span></h4>
               <p>
                 There are many variations passages Lorem Ipsum available, but we
                 are the majority have suffered alteration.
               </p>
             </div>
             <div>
-              <h4>Expert Team Member -----</h4>
+              <h4 >Expert Team Member <span className="about_subheading_line"></span></h4>
               <p>
                 There are many variations passages Lorem Ipsum available, but we
                 are the majority have suffered alteration.

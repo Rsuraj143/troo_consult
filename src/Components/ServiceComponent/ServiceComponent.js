@@ -16,8 +16,7 @@ const ServiceComponent = () => {
           <h5 className="subheading service_sub_heading">
             What We Do Four You
           </h5>
-          <h2 className="service_main_heading section_header">We provide exclusive </h2>
-          <h2 className="service_main_heading section_header">consultancy service</h2>
+          <h2 className="service_main_heading section_header">We provide exclusive consultancy service </h2>
         </div>
         <div className="troo_service_cards">
           <div className="service_cards">

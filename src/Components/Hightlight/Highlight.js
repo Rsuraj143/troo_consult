@@ -63,17 +63,6 @@ const Highlight = () => {
               </p>
             </div>
           </div>
-          <div className="highlight_text_lists">
-            <div><h3 className="highlight_num">05</h3></div>
-            <div>
-              <h3 className="highlight_heading">Strategy and Innovation</h3>
-              <p className="highlight_para">
-                Lorem Ipsum is simply dummy rummy text of the printing and
-                typesetting’s the industrey's standard dummy text ever since the
-                1500 when printed galley of type.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
