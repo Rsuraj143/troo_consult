@@ -98,7 +98,7 @@ const HeaderComponent = () => {
           <div className="troo_address">
             <div className="troo_address_location">
               <span>
-                <CiLocationOn className="address_icons"/>
+                <CiLocationOn className="address_icons" />
               </span>
               <span className="address_default">
                 <h5>4516 School Street, Danbury, CT, Canada</h5>
@@ -106,7 +106,7 @@ const HeaderComponent = () => {
             </div>
             <div className="troo_address_mail">
               <span>
-                <HiOutlineMailOpen className="address_icons"/>
+                <HiOutlineMailOpen className="address_icons" />
               </span>
               <span className="address_default">
                 <h5>example@email.com</h5>

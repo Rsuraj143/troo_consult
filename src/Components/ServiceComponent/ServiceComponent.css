@@ -18,7 +18,7 @@
 }
 .service_main_heading {
   text-align: center;
-    padding: 0 340px;
+  padding: 0 340px;
 }
 .service_cards {
   max-width: 1300px;
@@ -166,15 +166,28 @@
     line-height: 40px;
   }
 }
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1140px) {
   .service_main_heading {
     font-size: 32px;
-    line-height: 32px;
+    line-height: 45px;
+  }
+  .service_main_heading {
+    padding: 0 250px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .service_main_heading {
+    padding: 0 160px;
   }
 }
 @media only screen and (max-width: 768px) {
   .troo_service_section {
     background-image: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .service_main_heading {
+    padding: 0 15px;
   }
 }
 @media only screen and (max-width: 540px) {

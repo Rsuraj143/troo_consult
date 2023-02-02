@@ -148,6 +148,9 @@
   .blogs_card_header {
     justify-content: space-between;
   }
+  .blogs_card{
+    width: 100%;
+  } 
 }
 
 @media only screen and (max-width: 540px) {

@@ -4,8 +4,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaStar } from "react-icons/fa";
 import quotes from "../../Images/quotes.svg";
-import testimonial_img1 from "../../Images/testimonial_img-1.svg";
-import testimonial_img2 from "../../Images/testimonial_img-2.svg";
+import testimonial_img1 from "../../Images/testimonial_img-1.png";
+import testimonial_img2 from "../../Images/testimonial_img-2.png";
 
 const responsive = {
   superLargeDesktop: {

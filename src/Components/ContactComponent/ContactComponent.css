@@ -21,7 +21,7 @@
 .contact_container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 260px 0 81px 0;
+  padding: 260px 0 100px 0;
 }
 .contact_heading {
   display: flex;
@@ -151,7 +151,7 @@
   background-color: var(--bs-accordion-bg);
   border: none;
   margin-bottom: 20px;
-  padding: 6px 18px;
+  padding: 2px 18px;
   box-shadow: 0px -6px 20px rgb(0 0 0 / 5%), 0px 8px 20px rgb(0 0 0 / 5%);
 }
 .accordion-button:focus {

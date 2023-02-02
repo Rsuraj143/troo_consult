@@ -125,18 +125,7 @@ h4 {
   display: flex;
   margin-bottom: 0;
 }
-.troo_nav_bar ul li a {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
-  color: #191825 !important;
-  cursor: pointer;
-}
-.troo_nav_bar ul li a:hover {
-  color: #673ab7;
-}
+
 .navmanu_contain ul {
   margin-top: 0;
   margin-bottom: 0rem;
@@ -278,6 +267,7 @@ ul {
 .drawer_manu {
   display: none;
 }
+
 .hamburger_btn_manu {
   transform: translateX(100%);
 }
@@ -291,7 +281,7 @@ ul {
 
 .hamburger_btn_manu li a {
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 .drawer_manu ul {
