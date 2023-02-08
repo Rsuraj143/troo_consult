@@ -33,7 +33,7 @@ const HeaderComponent = () => {
       <div className="show_nav" ref={navbar_ref}>
         <div className="troo_nav_bar">
           <div className="webLogo">
-            <Link to="/">
+            <Link to="home">
               <img src={WebLogo} className="logoImg" alt="img" />
             </Link>
           </div>
@@ -44,10 +44,10 @@ const HeaderComponent = () => {
                 : "nav-manu navmanu_contain"
             }
           >
-            <Drawer handleClick={handleClick} />
+            <NavLinkItems handleClick={handleClick} />
           </div>
           <div className="nav_bar_btn">
-            <Link>
+            <Link to="contact">
               <button className="button">
                 <p className="btn_text btn_bk_apontmt">+ Book A Appointment</p>
               </button>
@@ -58,10 +58,10 @@ const HeaderComponent = () => {
               <img src={phonIcon} alt="phoneIcon" />
             </div>
 
-            <div className="numbertext">
+            <Link to="contact" className="numbertext">
               <p>Call Us on</p>
               <span className="contactNumber">+44 123 456 7890</span>
-            </div>
+            </Link>
           </div>
           <div className="humburgerLogo">
             {click ? (
@@ -80,7 +80,7 @@ const HeaderComponent = () => {
             >
               <div className="drawer_container">
                 <div className="drawer_manu">
-                  <Drawer handleClick={handleClick} />
+                  <NavLinkItems handleClick={handleClick} />
                   <Link to="contact" className="contact_drawer">
                     <p>Call Us on</p>
                     <p>+44 123 456 7890</p>
@@ -141,10 +141,10 @@ const HeaderComponent = () => {
                 : "nav-manu navmanu_contain"
             }
           >
-            <Drawer handleClick={handleClick} />
+            <NavLinkItems handleClick={handleClick} />
           </div>
           <div className="nav_bar_btn">
-            <Link>
+            <Link to="contact">
               <button className="button">
                 <p className="btn_text btn_bk_apontmt">+ Book A Appointment</p>
               </button>
@@ -155,10 +155,10 @@ const HeaderComponent = () => {
               <img src={phonIcon} alt="phoneIcon" />
             </div>
 
-            <div className="numbertext">
+            <Link to="contact" className="numbertext">
               <p>Call Us on</p>
               <span className="contactNumber">+44 123 456 7890</span>
-            </div>
+            </Link>
           </div>
           <div className="humburgerLogo">
             {click ? (
@@ -177,7 +177,7 @@ const HeaderComponent = () => {
             >
               <div className="drawer_container">
                 <div className="drawer_manu">
-                  <Drawer handleClick={handleClick} />
+                  <NavLinkItems handleClick={handleClick} />
                   <Link to="contact" className="contact_drawer">
                     <p>Call Us on</p>
                     <p>+44 123 456 7890</p>
@@ -194,7 +194,7 @@ const HeaderComponent = () => {
 
 export default HeaderComponent;
 
-const Drawer = (props) => {
+const NavLinkItems = (props) => {
   return (
     <ul>
       <li>

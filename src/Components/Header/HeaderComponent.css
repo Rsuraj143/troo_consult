@@ -174,7 +174,11 @@ ul {
 .numbertext p {
   margin-bottom: 0;
 }
-
+.contact_class a{
+  color: #191825;
+  text-decoration: none;
+  cursor: pointer;
+}
 .btn_text {
   font-family: "Jost";
   font-style: normal;
@@ -231,6 +235,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 14px;
+  cursor: pointer;
 }
 .numbertext {
   background: #f6f5fb;
